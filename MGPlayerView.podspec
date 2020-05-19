@@ -18,25 +18,26 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+简易视频播放器
                        DESC
 
-  s.homepage         = 'https://github.com/mal666666@163.com/MGPlayerView'
+  s.homepage         = 'https://github.com/mal666666/MGPlayerView'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mal666666@163.com' => 'mal666666@163.com' }
-  s.source           = { :git => 'https://github.com/mal666666@163.com/MGPlayerView.git', :tag => s.version.to_s }
+  s.author           = { '小马哥' => 'mal666666@163.com' }
+  s.source           = { :git => 'https://github.com/mal666666/MGPlayerView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
 
   s.source_files = 'MGPlayerView/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'MGPlayerView' => ['MGPlayerView/Assets/*.png']
-  # }
+   s.resource_bundles = {
+     'MGPlayerView' => ['MGPlayerView/Assets/*.png']
+   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'Masonry'
+  s.prefix_header_contents = '#import"Masonry.h"'
 end

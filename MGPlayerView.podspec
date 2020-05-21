@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGPlayerView'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A short description of MGPlayerView.'
 
 # This description is used to generate tags and improve search results.
@@ -30,27 +30,37 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
   
-#  s.default_subspec = 'All'
-#
-#  s.subspec 'Category' do |ss|
-#    ss.source_files = 'MGPlayerView/Classes/Category/*.{h,m}'
-#  end
-#
-#  s.subspec 'ContentView' do |ss|
-#    ss.source_files = 'MGPlayerView/Classes/ContentView/*.{h,m}'
-#  end
-#
-#  s.subspec 'All' do |ss|
-#    ss.dependency 'MGPlayerView/Category'
-#    ss.dependency 'MGPlayerView/ContentView'
-#  end
+  s.default_subspec = 'All'
+  
+  s.subspec 'All' do |ss|
+    ss.dependency 'MGPlayerView/Main'
+    ss.dependency 'MGPlayerView/ContentView'
+    ss.dependency 'MGPlayerView/GestureView'
+    ss.dependency 'MGPlayerView/MaskView'
+    ss.dependency 'MGPlayerView/Category'
+  end
+
+  s.subspec 'Main' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/Main/*.{h,m}'
+  end
+
+  s.subspec 'ContentView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/ContentView/*.{h,m}'
+  end
+  
+  s.subspec 'GestureView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/GestureView/*.{h,m}'
+  end
+  
+  s.subspec 'MaskView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/MaskView/*.{h,m}'
+  end
+  
+  s.subspec 'Category' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/Category/*.{h,m}'
+  end
 
 #  s.source_files = 'MGPlayerView/Classes/**/*'
-  s.source_files ='MGPlayerView/Classes/Main/*.{h,m}',
-                'MGPlayerView/Classes/ContentView/*.{h,m}',
-                'MGPlayerView/Classes/GestureView/*.{h,m}',
-                'MGPlayerView/Classes/MaskView/*.{h,m}',
-                'MGPlayerView/Classes/Category/*.{h,m}'
   
   s.resource_bundles = {
     'MGPlayerView' => ['MGPlayerView/Assets/*.png']

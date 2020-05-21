@@ -1,6 +1,6 @@
 {
   "name": "MGPlayerView",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "A short description of MGPlayerView.",
   "description": "简易视频播放器",
   "homepage": "https://github.com/mal666666/MGPlayerView",
@@ -13,18 +13,12 @@
   },
   "source": {
     "git": "https://github.com/mal666666/MGPlayerView.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": [
-    "MGPlayerView/Classes/Main/*.{h,m}",
-    "MGPlayerView/Classes/ContentView/*.{h,m}",
-    "MGPlayerView/Classes/GestureView/*.{h,m}",
-    "MGPlayerView/Classes/MaskView/*.{h,m}",
-    "MGPlayerView/Classes/Category/*.{h,m}"
-  ],
+  "default_subspecs": "All",
   "resource_bundles": {
     "MGPlayerView": [
       "MGPlayerView/Assets/*.png"
@@ -35,5 +29,47 @@
 
     ]
   },
-  "prefix_header_contents": "#import\"Masonry.h\""
+  "prefix_header_contents": "#import\"Masonry.h\"",
+  "subspecs": [
+    {
+      "name": "All",
+      "dependencies": {
+        "MGPlayerView/Main": [
+
+        ],
+        "MGPlayerView/ContentView": [
+
+        ],
+        "MGPlayerView/GestureView": [
+
+        ],
+        "MGPlayerView/MaskView": [
+
+        ],
+        "MGPlayerView/Category": [
+
+        ]
+      }
+    },
+    {
+      "name": "Main",
+      "source_files": "MGPlayerView/Classes/Main/*.{h,m}"
+    },
+    {
+      "name": "ContentView",
+      "source_files": "MGPlayerView/Classes/ContentView/*.{h,m}"
+    },
+    {
+      "name": "GestureView",
+      "source_files": "MGPlayerView/Classes/GestureView/*.{h,m}"
+    },
+    {
+      "name": "MaskView",
+      "source_files": "MGPlayerView/Classes/MaskView/*.{h,m}"
+    },
+    {
+      "name": "Category",
+      "source_files": "MGPlayerView/Classes/Category/*.{h,m}"
+    }
+  ]
 }

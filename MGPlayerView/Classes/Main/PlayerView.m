@@ -11,6 +11,7 @@
 #import "PlayerFullScreenRotateAnimator.h"
 #import <AVFoundation/AVFoundation.h>
 #import "BrightnessView.h"
+#import "PlayerView+Property.h"
 
 
 @interface PlayerView()

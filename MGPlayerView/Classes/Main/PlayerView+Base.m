@@ -9,6 +9,7 @@
 #import "PlayerView+Base.h"
 #import "PlayerGestureView.h"
 #import <AVFoundation/AVFoundation.h>
+#import "PlayerView+Property.h"
 
 @interface PlayerView ()<CNPlayerGestureViewDelegate>
 
@@ -29,10 +30,14 @@
 }
 
 -(void)playerGestureDoubleTapEvent{
-    if (self.contentView.playerLayer.player.timeControlStatus ==AVPlayerTimeControlStatusPlaying){
-        [self.contentView.playerLayer.player pause];
-    }else{
-        [self.contentView.playerLayer.player play];
+    if (@available(iOS 10.0, *)) {
+        if (self.contentView.playerLayer.player.timeControlStatus ==AVPlayerTimeControlStatusPlaying){
+            [self.contentView.playerLayer.player pause];
+        }else{
+            [self.contentView.playerLayer.player play];
+        }
+    } else {
+        // Fallback on earlier versions
     }
 }
 

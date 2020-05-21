@@ -19,7 +19,24 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'MGPlayerView'
 ```
-
+## Usage
+```
+PlayerView *playerView =[[PlayerView alloc]initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.width *9/16)];
+[self.view addSubview:playerView];
+[playerView playWithUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
+[playerView supportFullScreenWithVC:self];
+playerView.delegateUI =self;
+```
+```
+-(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
+    return UIInterfaceOrientationMaskAllButUpsideDown;
+}
+```
+```
+-(UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskPortrait;
+}
+```
 ## Author
 
 mal666666@163.com, mal666666@163.com

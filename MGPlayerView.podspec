@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGPlayerView'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = 'A short description of MGPlayerView.'
 
 # This description is used to generate tags and improve search results.
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-简易视频播放器
+  简易视频播放器
                        DESC
 
   s.homepage         = 'https://github.com/mal666666/MGPlayerView'
@@ -29,15 +29,36 @@ Pod::Spec.new do |s|
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '8.0'
-
-  s.source_files = 'MGPlayerView/Classes/**/*'
   
-   s.resource_bundles = {
-     'MGPlayerView' => ['MGPlayerView/Assets/*.png']
-   }
+#  s.default_subspec = 'All'
+#
+#  s.subspec 'Category' do |ss|
+#    ss.source_files = 'MGPlayerView/Classes/Category/*.{h,m}'
+#  end
+#
+#  s.subspec 'ContentView' do |ss|
+#    ss.source_files = 'MGPlayerView/Classes/ContentView/*.{h,m}'
+#  end
+#
+#  s.subspec 'All' do |ss|
+#    ss.dependency 'MGPlayerView/Category'
+#    ss.dependency 'MGPlayerView/ContentView'
+#  end
+
+#  s.source_files = 'MGPlayerView/Classes/**/*'
+  s.source_files ='MGPlayerView/Classes/Main/*.{h,m}',
+                'MGPlayerView/Classes/ContentView/*.{h,m}',
+                'MGPlayerView/Classes/GestureView/*.{h,m}',
+                'MGPlayerView/Classes/MaskView/*.{h,m}',
+                'MGPlayerView/Classes/Category/*.{h,m}'
+  
+  s.resource_bundles = {
+    'MGPlayerView' => ['MGPlayerView/Assets/*.png']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Masonry'
   s.prefix_header_contents = '#import"Masonry.h"'
+  
 end

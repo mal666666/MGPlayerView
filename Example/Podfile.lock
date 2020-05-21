@@ -13,7 +13,7 @@ DEPENDENCIES:
   - MGPlayerView (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - FBSnapshotTestCase
     - Masonry
 
@@ -24,8 +24,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerView: 74c9e26058bb7852fc74f80e59b05c632a9044ec
+  MGPlayerView: 3b3f40068693de44e7ed35d09a9f819aec89c955
 
-PODFILE CHECKSUM: a3137d21536e62372444575ef2384f2d2aa6118a
+PODFILE CHECKSUM: e55c0703a1384ce9707f9613e57ae1b6693a1fbf
 
 COCOAPODS: 1.9.1

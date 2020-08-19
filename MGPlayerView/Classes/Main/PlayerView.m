@@ -191,7 +191,7 @@
 }
 
 -(void)dealloc{
-    NSLog(@"PlayerView dealloc")
+    NSLog(@"PlayerView dealloc");
 }
 
 @end

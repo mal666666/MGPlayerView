@@ -15,15 +15,25 @@ PODS:
     - MGPlayerView/GestureView
     - MGPlayerView/Main
     - MGPlayerView/MaskView
+    - MGPlayerView/Protocol
   - MGPlayerView/Category (0.1.3):
     - Masonry
   - MGPlayerView/ContentView (0.1.3):
     - Masonry
   - MGPlayerView/GestureView (0.1.3):
     - Masonry
+    - MGPlayerView/Protocol
   - MGPlayerView/Main (0.1.3):
     - Masonry
+    - MGPlayerView/ContentView
+    - MGPlayerView/GestureView
+    - MGPlayerView/MaskView
   - MGPlayerView/MaskView (0.1.3):
+    - Masonry
+    - MGPlayerView/Category
+    - MGPlayerView/GestureView
+    - MGPlayerView/Protocol
+  - MGPlayerView/Protocol (0.1.3):
     - Masonry
 
 DEPENDENCIES:
@@ -42,8 +52,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerView: 7361ed1cffd3b420bb2310a3040d812913127fea
+  MGPlayerView: 5e6d4ed51717bc5cc745a2f70aeb883313606526
 
 PODFILE CHECKSUM: 003a333c132c043ffbf4acf12f279f67f1811e74
 
-COCOAPODS: 1.10.0.beta.1
+COCOAPODS: 1.10.0.beta.2

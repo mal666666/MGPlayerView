@@ -18,7 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 //浮层代理
 @property (nonatomic,weak) id<PlayerViewUICallbackProtocol> delegateUI;
 //播放资源
--(void)playWithUrl:(NSString *)url;
+-(void)setPlayUrl:(NSString *)url;
+//播放
+-(void)play;
 //支持全屏
 -(void)supportFullScreenWithVC:(UIViewController *)vc;
 //退出全屏

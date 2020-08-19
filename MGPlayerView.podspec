@@ -11,12 +11,6 @@ Pod::Spec.new do |s|
   s.version          = '0.1.3'
   s.summary          = 'A short description of MGPlayerView.'
 
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
   s.description      = <<-DESC
   简易视频播放器
                        DESC
@@ -27,39 +21,45 @@ Pod::Spec.new do |s|
   s.author           = { '小马哥' => 'mal666666@163.com' }
   s.source           = { :git => 'https://github.com/mal666666/MGPlayerView.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  
-#  s.subspec 'Core' do |ss|
-#    ss.source_files = 'KissXML/*.{h,m}', 'KissXML/Categories/*.{h,m}', 'KissXML/Private/*.h'
-#    ss.private_header_files = 'KissXML/Private/**/*.h'
-#    ss.library      = 'xml2'
-#    ss.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
-#  end
 
   s.ios.deployment_target = '9.0'
   
   s.xcconfig = { 'OTHER_LDFLAGS' => '-ObjC' }
   s.default_subspec = 'All'
-  s.subspec 'Main' do |ss|
-    ss.source_files = 'MGPlayerView/Classes/Main/*.{h,m}'
+
+  s.subspec 'All' do |ss|
+    ss.dependency 'MGPlayerView/Protocol'
+    ss.dependency 'MGPlayerView/Category'
+    ss.dependency 'MGPlayerView/GestureView'
+    ss.dependency 'MGPlayerView/ContentView'
+    ss.dependency 'MGPlayerView/MaskView'
+    ss.dependency 'MGPlayerView/Main'
   end
-  s.subspec 'ContentView' do |ss|
-    ss.source_files = 'MGPlayerView/Classes/ContentView/*.{h,m}'
-  end
-  s.subspec 'GestureView' do |ss|
-    ss.source_files = 'MGPlayerView/Classes/GestureView/*.{h,m}'
-  end
-  s.subspec 'MaskView' do |ss|
-    ss.source_files = 'MGPlayerView/Classes/MaskView/*.{h,m}'
+
+  s.subspec 'Protocol' do |ss|
+    ss.source_files ='MGPlayerView/Classes/Protocol'
   end
   s.subspec 'Category' do |ss|
-    ss.source_files = 'MGPlayerView/Classes/Category/*.{h,m}'
+    ss.source_files = 'MGPlayerView/Classes/Category'
   end
-  s.subspec 'All' do |ss|
-    ss.dependency 'MGPlayerView/Main'
-    ss.dependency 'MGPlayerView/ContentView'
-    ss.dependency 'MGPlayerView/GestureView'
-    ss.dependency 'MGPlayerView/MaskView'
+  s.subspec 'ContentView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/ContentView'
+  end
+  s.subspec 'GestureView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/GestureView'
+    ss.dependency 'MGPlayerView/Protocol'
+  end
+  s.subspec 'MaskView' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/MaskView'
     ss.dependency 'MGPlayerView/Category'
+    ss.dependency 'MGPlayerView/GestureView'
+    ss.dependency 'MGPlayerView/Protocol'
+  end
+  s.subspec 'Main' do |ss|
+    ss.source_files = 'MGPlayerView/Classes/Main'
+    ss.dependency 'MGPlayerView/GestureView'
+    ss.dependency 'MGPlayerView/ContentView'
+    ss.dependency 'MGPlayerView/MaskView'
   end
 
 #  s.source_files = 'MGPlayerView/Classes/**/*'
@@ -69,8 +69,13 @@ Pod::Spec.new do |s|
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
+  # s.private_header_files = 'KissXML/Private/**/*.h'
+  # s.library      = 'xml2'
+  # s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
+
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Masonry'
+#  s.dependency 'ijkplayer'
   s.prefix_header_contents = '#import"Masonry.h"'
   
 end

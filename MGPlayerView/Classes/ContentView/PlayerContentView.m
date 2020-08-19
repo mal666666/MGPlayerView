@@ -23,9 +23,15 @@
     return (AVPlayerLayer *)self.layer;
 }
 
--(void)playWithUrl:(NSString *)url{
-    self.playerLayer.player =[[AVPlayer alloc]initWithURL:[NSURL URLWithString:url]];
-    [self.playerLayer.player play];
+-(void)setPlayUrl:(NSString *)url{
+    AVURLAsset *asset =[AVURLAsset assetWithURL:[NSURL URLWithString:url]];
+    AVPlayerItem *item =[AVPlayerItem playerItemWithAsset:asset];
+    self.playerLayer.player =[AVPlayer playerWithPlayerItem:item];
+    if (@available(iOS 10.0, *)) {
+        self.playerLayer.player.automaticallyWaitsToMinimizeStalling = YES;
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 @end

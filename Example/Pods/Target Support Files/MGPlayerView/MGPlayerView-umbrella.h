@@ -20,12 +20,12 @@
 #import "PlayerView+Base.h"
 #import "PlayerView+Property.h"
 #import "PlayerView.h"
-#import "PlayerViewCallbackProtocol.h"
-#import "PlayerViewProtocol.h"
-#import "PlayerView_prv.h"
 #import "FullMaskLockView.h"
 #import "FullMaskView.h"
 #import "SmallMaskView.h"
+#import "PlayerViewCallbackProtocol.h"
+#import "PlayerViewProtocol.h"
+#import "PlayerView_prv.h"
 
 FOUNDATION_EXPORT double MGPlayerViewVersionNumber;
 FOUNDATION_EXPORT const unsigned char MGPlayerViewVersionString[];

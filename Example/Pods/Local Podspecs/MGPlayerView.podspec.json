@@ -30,46 +30,83 @@
   "dependencies": {
     "Masonry": [
 
+    ],
+    "ijkplayer-ios": [
+
     ]
   },
   "prefix_header_contents": "#import\"Masonry.h\"",
   "subspecs": [
     {
-      "name": "Main",
-      "source_files": "MGPlayerView/Classes/Main/*.{h,m}"
-    },
-    {
-      "name": "ContentView",
-      "source_files": "MGPlayerView/Classes/ContentView/*.{h,m}"
-    },
-    {
-      "name": "GestureView",
-      "source_files": "MGPlayerView/Classes/GestureView/*.{h,m}"
-    },
-    {
-      "name": "MaskView",
-      "source_files": "MGPlayerView/Classes/MaskView/*.{h,m}"
-    },
-    {
-      "name": "Category",
-      "source_files": "MGPlayerView/Classes/Category/*.{h,m}"
-    },
-    {
       "name": "All",
       "dependencies": {
-        "MGPlayerView/Main": [
+        "MGPlayerView/Protocol": [
 
         ],
-        "MGPlayerView/ContentView": [
+        "MGPlayerView/Category": [
 
         ],
         "MGPlayerView/GestureView": [
 
         ],
+        "MGPlayerView/ContentView": [
+
+        ],
         "MGPlayerView/MaskView": [
 
         ],
+        "MGPlayerView/Main": [
+
+        ]
+      }
+    },
+    {
+      "name": "Protocol",
+      "source_files": "MGPlayerView/Classes/Protocol"
+    },
+    {
+      "name": "Category",
+      "source_files": "MGPlayerView/Classes/Category"
+    },
+    {
+      "name": "ContentView",
+      "source_files": "MGPlayerView/Classes/ContentView"
+    },
+    {
+      "name": "GestureView",
+      "source_files": "MGPlayerView/Classes/GestureView",
+      "dependencies": {
+        "MGPlayerView/Protocol": [
+
+        ]
+      }
+    },
+    {
+      "name": "MaskView",
+      "source_files": "MGPlayerView/Classes/MaskView",
+      "dependencies": {
         "MGPlayerView/Category": [
+
+        ],
+        "MGPlayerView/GestureView": [
+
+        ],
+        "MGPlayerView/Protocol": [
+
+        ]
+      }
+    },
+    {
+      "name": "Main",
+      "source_files": "MGPlayerView/Classes/Main",
+      "dependencies": {
+        "MGPlayerView/GestureView": [
+
+        ],
+        "MGPlayerView/ContentView": [
+
+        ],
+        "MGPlayerView/MaskView": [
 
         ]
       }

@@ -65,10 +65,14 @@
     }
 }
 //设置播放view层
--(void)playWithUrl:(NSString *)url{
-    [self.contentView playWithUrl:url];
+-(void)setPlayUrl:(NSString *)url{
+    [self.contentView setPlayUrl:url];
     [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+}
+//播放
+-(void)play{
+    [self.contentView.playerLayer.player play];
 }
 //支持全屏
 -(void)supportFullScreenWithVC:(UIViewController *)vc{

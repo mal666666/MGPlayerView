@@ -208,6 +208,7 @@
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
         [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang")] forState:UIControlStateSelected];
         [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting")] forState:UIControlStateNormal];
+        _playBtn.selected = YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.height.offset(44);

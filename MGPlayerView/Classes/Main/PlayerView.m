@@ -109,7 +109,7 @@
 }
 //退出小屏
 -(void)quitSmallScreen{
-
+    self.contentView.playerLayer.player = nil;
 }
 //设备方向完成改变
 - (void)playerViewDeviceOrientationDidChange {
@@ -188,6 +188,10 @@
         }];
     }
     return _lockView;
+}
+
+-(void)dealloc{
+    NSLog(@"PlayerView dealloc")
 }
 
 @end

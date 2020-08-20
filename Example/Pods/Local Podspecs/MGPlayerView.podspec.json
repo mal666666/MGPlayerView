@@ -1,6 +1,6 @@
 {
   "name": "MGPlayerView",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "A short description of MGPlayerView.",
   "description": "简易视频播放器",
   "homepage": "https://github.com/mal666666/MGPlayerView",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/mal666666/MGPlayerView.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "9.0"

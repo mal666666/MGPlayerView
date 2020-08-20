@@ -24,7 +24,7 @@
     [playerView supportFullScreenWithVC:self];
     playerView.delegateUI =self;
     [playerView play];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(150 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1500 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         [playerView quitSmallScreen];
     });
 }

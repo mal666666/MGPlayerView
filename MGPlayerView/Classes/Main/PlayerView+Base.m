@@ -60,10 +60,18 @@
 }
 
 -(void)smallMaskViewToFullScreenEvent:(id)playerView completion:(void (^)(void))completion{
+    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(smallMaskViewToFullScreenEvent:completion:)]) {
+        [self.delegateUI smallMaskViewToFullScreenEvent:playerView completion:completion];
+    }
+
     [self toFullScreen:completion];
 }
 
 -(void)fullMaskViewBackEvent:(id)playerView completion:(void (^)(void))completion{
+    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(fullMaskViewBackEvent:completion:)]) {
+        [self.delegateUI fullMaskViewBackEvent:playerView completion:completion];
+    }
+
     [self quitFullScreen:completion];
 }
 

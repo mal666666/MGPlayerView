@@ -37,6 +37,14 @@
     NSLog(@"退出视频");
 }
 
+-(void)smallMaskViewToFullScreenEvent:(id)playerView completion:(void (^)(void))completion{
+    
+}
+
+-(void)fullMaskViewBackEvent:(id)playerView completion:(void (^)(void))completion{
+    
+}
+
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
 }

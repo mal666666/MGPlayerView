@@ -5,10 +5,10 @@ PODS:
   - FBSnapshotTestCase/SwiftSupport (2.1.4):
     - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
-  - MGPlayerView (0.1.5):
+  - MGPlayerView (0.1.6):
     - Masonry
-    - MGPlayerView/All (= 0.1.5)
-  - MGPlayerView/All (0.1.5):
+    - MGPlayerView/All (= 0.1.6)
+  - MGPlayerView/All (0.1.6):
     - Masonry
     - MGPlayerView/Category
     - MGPlayerView/ContentView
@@ -16,24 +16,24 @@ PODS:
     - MGPlayerView/Main
     - MGPlayerView/MaskView
     - MGPlayerView/Protocol
-  - MGPlayerView/Category (0.1.5):
+  - MGPlayerView/Category (0.1.6):
     - Masonry
-  - MGPlayerView/ContentView (0.1.5):
+  - MGPlayerView/ContentView (0.1.6):
     - Masonry
-  - MGPlayerView/GestureView (0.1.5):
+  - MGPlayerView/GestureView (0.1.6):
     - Masonry
     - MGPlayerView/Protocol
-  - MGPlayerView/Main (0.1.5):
+  - MGPlayerView/Main (0.1.6):
     - Masonry
     - MGPlayerView/ContentView
     - MGPlayerView/GestureView
     - MGPlayerView/MaskView
-  - MGPlayerView/MaskView (0.1.5):
+  - MGPlayerView/MaskView (0.1.6):
     - Masonry
     - MGPlayerView/Category
     - MGPlayerView/GestureView
     - MGPlayerView/Protocol
-  - MGPlayerView/Protocol (0.1.5):
+  - MGPlayerView/Protocol (0.1.6):
     - Masonry
 
 DEPENDENCIES:
@@ -52,7 +52,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerView: 854b27f9a496e4fb96a3c3843e95b095ccc5bbc0
+  MGPlayerView: b007e3a87fb67f1482c0d60cb16185ca6d7f2462
 
 PODFILE CHECKSUM: 003a333c132c043ffbf4acf12f279f67f1811e74
 

@@ -95,13 +95,13 @@
 
 -(void)touchLeftBackButtonEvent{
     if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(smallMaskViewBackEvent:)]) {
-        [self.delegateUI smallMaskViewBackEvent:self];;
+        [self.delegateUI smallMaskViewBackEvent:self];
     }
 }
 
 -(void)touchPlayAndPauseButtonEvent{
-    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(playBtnClickEvent:)]) {
-        [self.delegateUI playBtnClickEvent:self];;
+    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(playStateEvent:state:)]) {
+        [self.delegateUI playStateEvent:self state:NO];
     }
 }
 

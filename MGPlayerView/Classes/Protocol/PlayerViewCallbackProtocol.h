@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 //全屏返回事件
 -(void)fullMaskViewBackEvent:(id)playerView completion:(void (^)(void))completion;
 //播放暂停事件
--(void)playBtnClickEvent:(id)view;
+-(void)playStateEvent:(id)view state:(BOOL)isPlaying;
 //锁屏按钮事件,YES为加锁，NO为解锁
 -(void)lockBtnClickEventWithState:(BOOL)state;
 

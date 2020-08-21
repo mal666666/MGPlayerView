@@ -28,6 +28,10 @@
         [playerView quitSmallScreen];
     });
 }
+#pragma mark --- PlayerViewUICallbackProtocol  ---
+-(void)playStateEvent:(id)view state:(BOOL)isPlaying{
+    NSLog(@"%@",isPlaying?@"播放":@"暂停");
+}
 
 -(void)smallMaskViewBackEvent:(id)playerView{
     NSLog(@"退出视频");

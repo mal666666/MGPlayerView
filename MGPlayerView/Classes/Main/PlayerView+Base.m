@@ -30,15 +30,8 @@
 }
 
 -(void)playerGestureDoubleTapEvent{
-    if (@available(iOS 10.0, *)) {
-        if (self.contentView.playerLayer.player.timeControlStatus ==AVPlayerTimeControlStatusPlaying){
-            [self.contentView.playerLayer.player pause];
-        }else{
-            [self.contentView.playerLayer.player play];
-        }
-    } else {
-        // Fallback on earlier versions
-    }
+    //双击手势和播放暂停按钮事件一样
+    [self playStateEvent:self state:NO];
 }
 
 #pragma mark ---PlayerViewUICallbackProtocol---
@@ -48,8 +41,22 @@
     }
 }
 
--(void)playBtnClickEvent:(id)view{
-    [self playerGestureDoubleTapEvent];
+-(void)playStateEvent:(id)view state:(BOOL)isPlaying{
+    BOOL state = NO;
+    if (@available(iOS 10.0, *)) {
+        if (self.contentView.playerLayer.player.timeControlStatus ==AVPlayerTimeControlStatusPlaying){
+            [self.contentView.playerLayer.player pause];
+            state = NO;
+        }else{
+            [self.contentView.playerLayer.player play];
+            state = YES;
+        }
+    } else {
+        // Fallback on earlier versions
+    }
+    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(playStateEvent:state:)]) {
+        [self.delegateUI playStateEvent:view state:state];
+    }
 }
 
 -(void)smallMaskViewToFullScreenEvent:(id)playerView completion:(void (^)(void))completion{

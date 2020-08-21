@@ -112,8 +112,8 @@
 }
 
 -(void)touchPlayAndPauseButtonEvent{
-    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(playBtnClickEvent:)]) {
-        [self.delegateUI playBtnClickEvent:self];;
+    if (self.delegateUI &&[self.delegateUI respondsToSelector:@selector(playStateEvent:state:)]) {
+        [self.delegateUI playStateEvent:self state:NO];
     }
 }
 

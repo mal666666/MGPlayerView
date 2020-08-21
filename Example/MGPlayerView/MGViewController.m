@@ -38,11 +38,11 @@
 }
 
 -(void)smallMaskViewToFullScreenEvent:(id)playerView completion:(void (^)(void))completion{
-    
+    NSLog(@"去大屏");
 }
 
 -(void)fullMaskViewBackEvent:(id)playerView completion:(void (^)(void))completion{
-    
+    NSLog(@"去小屏");
 }
 
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{

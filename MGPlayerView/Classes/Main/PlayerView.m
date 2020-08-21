@@ -114,10 +114,16 @@
 //设备方向完成改变
 - (void)playerViewDeviceOrientationDidChange {
     if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) &&!self.smallVC.presentedViewController) {
-        [self toFullScreen:^{
+//        [self toFullScreen:^{
+//        }];
+        [self smallMaskViewToFullScreenEvent:self completion:^{
+            
         }];
     }else if ([UIDevice currentDevice].orientation ==UIInterfaceOrientationPortrait &&self.smallVC.presentedViewController ==self.fullVC){
-        [self quitFullScreen:^{
+//        [self quitFullScreen:^{
+//        }];
+        [self fullMaskViewBackEvent:self completion:^{
+            
         }];
     }else{
     }

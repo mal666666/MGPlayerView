@@ -34,4 +34,15 @@
     }
 }
 
+-(void)setUrl:(NSURL *)url{
+    AVURLAsset *asset =[AVURLAsset assetWithURL:url];
+    AVPlayerItem *item =[AVPlayerItem playerItemWithAsset:asset];
+    self.playerLayer.player =[AVPlayer playerWithPlayerItem:item];
+    if (@available(iOS 10.0, *)) {
+        self.playerLayer.player.automaticallyWaitsToMinimizeStalling = YES;
+    } else {
+        // Fallback on earlier versions
+    }
+}
+
 @end

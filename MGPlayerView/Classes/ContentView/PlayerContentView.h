@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (strong, nonatomic) AVPlayerLayer *playerLayer;
 
 -(void)setPlayUrl:(NSString *)url;
+-(void)setUrl:(NSURL *)url;
 
 @end
 

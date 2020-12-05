@@ -70,6 +70,11 @@
     [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
 }
+-(void)setUrl:(NSURL *)url{
+    [self.contentView setUrl:url];
+    [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+    [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+}
 //播放
 -(void)play{
     [self.contentView.playerLayer.player play];

@@ -19,6 +19,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,weak) id<PlayerViewUICallbackProtocol> delegateUI;
 //播放资源
 -(void)setPlayUrl:(NSString *)url;
+-(void)setUrl:(NSURL *)url;
 //播放
 -(void)play;
 //支持全屏

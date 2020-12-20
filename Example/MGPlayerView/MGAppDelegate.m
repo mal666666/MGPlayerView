@@ -17,7 +17,12 @@
 }
 
 -(UIInterfaceOrientationMask)application:(UIApplication *)application supportedInterfaceOrientationsForWindow:(UIWindow *)window{
-    return UIInterfaceOrientationMaskAllButUpsideDown;
+    if ([[window.rootViewController presentedViewController] isKindOfClass:NSClassFromString(@"PlayerFullScreenViewController")]
+        ){
+        return UIInterfaceOrientationMaskAllButUpsideDown;
+    }else {
+        return UIInterfaceOrientationMaskPortrait;
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

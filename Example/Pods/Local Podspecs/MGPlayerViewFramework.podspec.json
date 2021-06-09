@@ -1,0 +1,27 @@
+{
+  "name": "MGPlayerViewFramework",
+  "version": "0.2.0",
+  "summary": "A short description of MGPlayerView.",
+  "description": "简易视频播放器",
+  "homepage": "https://github.com/mal666666/MGPlayerView",
+  "authors": {
+    "小马哥": "mal666666@163.com"
+  },
+  "source": {
+    "git": "https://github.com/mal666666/MGPlayerView.git",
+    "tag": "0.2.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "xcconfig": {
+    "OTHER_LDFLAGS": "-ObjC"
+  },
+  "vendored_frameworks": "MGPlayerView.framework",
+  "dependencies": {
+    "Masonry": [
+
+    ]
+  },
+  "prefix_header_contents": "#import\"Masonry.h\""
+}

@@ -1,59 +1,23 @@
 PODS:
-  - FBSnapshotTestCase (2.1.4):
-    - FBSnapshotTestCase/SwiftSupport (= 2.1.4)
-  - FBSnapshotTestCase/Core (2.1.4)
-  - FBSnapshotTestCase/SwiftSupport (2.1.4):
-    - FBSnapshotTestCase/Core
   - Masonry (1.1.0)
-  - MGPlayerView (0.1.8):
-    - Masonry
-    - MGPlayerView/All (= 0.1.8)
-  - MGPlayerView/All (0.1.8):
-    - Masonry
-    - MGPlayerView/Category
-    - MGPlayerView/ContentView
-    - MGPlayerView/GestureView
-    - MGPlayerView/Main
-    - MGPlayerView/MaskView
-    - MGPlayerView/Protocol
-  - MGPlayerView/Category (0.1.8):
-    - Masonry
-  - MGPlayerView/ContentView (0.1.8):
-    - Masonry
-  - MGPlayerView/GestureView (0.1.8):
-    - Masonry
-    - MGPlayerView/Protocol
-  - MGPlayerView/Main (0.1.8):
-    - Masonry
-    - MGPlayerView/ContentView
-    - MGPlayerView/GestureView
-    - MGPlayerView/MaskView
-  - MGPlayerView/MaskView (0.1.8):
-    - Masonry
-    - MGPlayerView/Category
-    - MGPlayerView/GestureView
-    - MGPlayerView/Protocol
-  - MGPlayerView/Protocol (0.1.8):
+  - MGPlayerViewFramework (0.2.0):
     - Masonry
 
 DEPENDENCIES:
-  - FBSnapshotTestCase
-  - MGPlayerView (from `../`)
+  - MGPlayerViewFramework (from `../MGPlayerViewFramework`)
 
 SPEC REPOS:
   trunk:
-    - FBSnapshotTestCase
     - Masonry
 
 EXTERNAL SOURCES:
-  MGPlayerView:
-    :path: "../"
+  MGPlayerViewFramework:
+    :path: "../MGPlayerViewFramework"
 
 SPEC CHECKSUMS:
-  FBSnapshotTestCase: 094f9f314decbabe373b87cc339bea235a63e07a
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerView: b52559a9fa01b0416525f959711464d1c2ec2766
+  MGPlayerViewFramework: 695f6dcace8d4a6f8145ff4135f9336518df45cb
 
-PODFILE CHECKSUM: 003a333c132c043ffbf4acf12f279f67f1811e74
+PODFILE CHECKSUM: 0d84d998ca6d38309629e637515652db938185f0
 
-COCOAPODS: 1.10.0.beta.2
+COCOAPODS: 1.10.1

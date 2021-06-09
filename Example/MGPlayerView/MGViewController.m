@@ -7,7 +7,7 @@
 //
 
 #import "MGViewController.h"
-#import <PlayerView.h>
+#import <MGPlayerView/PlayerView.h>
 
 @interface MGViewController ()<PlayerViewUICallbackProtocol>
 

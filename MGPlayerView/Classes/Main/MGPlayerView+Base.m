@@ -1,21 +1,21 @@
 //
-//  PlayerView+Base.m
-//  playerView
+//  MGPlayerView+Base.m
+//  MGplayerView
 //
 //  Created by MAL on 2020/5/11.
 //  Copyright © 2020 马 爱林. All rights reserved.
 //
 
-#import "PlayerView+Base.h"
+#import "MGPlayerView+Base.h"
 #import "PlayerGestureView.h"
 #import <AVFoundation/AVFoundation.h>
-#import "PlayerView+Property.h"
+#import "MGPlayerView+Property.h"
 
-@interface PlayerView ()<CNPlayerGestureViewDelegate>
+@interface MGPlayerView ()<CNPlayerGestureViewDelegate>
 
 @end
 
-@implementation PlayerView (Base)
+@implementation MGPlayerView (Base)
 
 #pragma mark ---CNPlayerGestureViewDelegate---
 -(void)playerGesturePinchEventType:(PlayerGesturePinchType)type{

@@ -1,20 +1,20 @@
 //
-//  PlayerView.m
-//  playerView
+//  MGPlayerView.m
+//  MGplayerView
 //
 //  Created by Mac on 2020/5/8.
 //  Copyright © 2020 马 爱林. All rights reserved.
 //
 
-#import "PlayerView.h"
+#import "MGPlayerView.h"
 #import "PlayerFullScreenViewController.h"
 #import "PlayerFullScreenRotateAnimator.h"
 #import <AVFoundation/AVFoundation.h>
 #import "BrightnessView.h"
-#import "PlayerView+Property.h"
+#import "MGPlayerView+Property.h"
 
 
-@interface PlayerView()
+@interface MGPlayerView()
 
 @property(strong, nonatomic) UIViewController *smallVC;
 @property(strong, nonatomic) PlayerFullScreenViewController *fullVC;
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation PlayerView
+@implementation MGPlayerView
 
 @synthesize delegateUI;
 

@@ -3,8 +3,8 @@ platform :ios, '9.0'
 
 target 'MGPlayerView_Example' do
   
-#  pod 'MGPlayerView', :path => '../'
-  pod 'MGPlayerViewFramework', :path => '../MGPlayerViewFramework'
+  pod 'MGPlayerView', :path => '../'
+#  pod 'MGPlayerViewFramework', :path => '../MGPlayerViewFramework'
 
   target 'MGPlayerView_Tests' do
     inherit! :search_paths

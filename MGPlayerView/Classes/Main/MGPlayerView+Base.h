@@ -1,16 +1,16 @@
 //
-//  PlayerView+Base.h
-//  playerView
+//  MGPlayerView+Base.h
+//  MGplayerView
 //
 //  Created by MAL on 2020/5/11.
 //  Copyright © 2020 马 爱林. All rights reserved.
 //
 
-#import "PlayerView.h"
+#import "MGPlayerView.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlayerView (Base)
+@interface MGPlayerView (Base)
 
 @end
 

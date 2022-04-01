@@ -5,7 +5,7 @@
 //  Created by Mac on 2020/5/21.
 //
 
-#import "PlayerView.h"
+#import "MGPlayerView.h"
 #import "PlayerContentView.h"
 #import "SmallMaskView.h"
 #import "FullMaskView.h"
@@ -13,7 +13,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface PlayerView ()
+@interface MGPlayerView ()
 
 //播放层
 @property(strong, nonatomic) PlayerContentView *contentView;

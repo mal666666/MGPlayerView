@@ -7,7 +7,7 @@
 //
 
 #import "MGViewController.h"
-#import <MGPlayerView/PlayerView.h>
+#import <MGPlayerView/MGPlayerView.h>
 
 @interface MGViewController ()<PlayerViewUICallbackProtocol>
 
@@ -18,7 +18,7 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor grayColor];
-    PlayerView *playerView =[[PlayerView alloc]initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.width *9/16)];
+    MGPlayerView *playerView =[[MGPlayerView alloc]initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.width *9/16)];
     [self.view addSubview:playerView];
     [playerView setPlayUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
     [playerView supportFullScreenWithVC:self];

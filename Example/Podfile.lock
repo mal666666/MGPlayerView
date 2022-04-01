@@ -1,23 +1,51 @@
 PODS:
   - Masonry (1.1.0)
-  - MGPlayerViewFramework (0.2.0):
+  - MGPlayerView (0.2.0):
+    - Masonry
+    - MGPlayerView/All (= 0.2.0)
+  - MGPlayerView/All (0.2.0):
+    - Masonry
+    - MGPlayerView/Category
+    - MGPlayerView/ContentView
+    - MGPlayerView/GestureView
+    - MGPlayerView/Main
+    - MGPlayerView/MaskView
+    - MGPlayerView/Protocol
+  - MGPlayerView/Category (0.2.0):
+    - Masonry
+  - MGPlayerView/ContentView (0.2.0):
+    - Masonry
+  - MGPlayerView/GestureView (0.2.0):
+    - Masonry
+    - MGPlayerView/Protocol
+  - MGPlayerView/Main (0.2.0):
+    - Masonry
+    - MGPlayerView/ContentView
+    - MGPlayerView/GestureView
+    - MGPlayerView/MaskView
+  - MGPlayerView/MaskView (0.2.0):
+    - Masonry
+    - MGPlayerView/Category
+    - MGPlayerView/GestureView
+    - MGPlayerView/Protocol
+  - MGPlayerView/Protocol (0.2.0):
     - Masonry
 
 DEPENDENCIES:
-  - MGPlayerViewFramework (from `../MGPlayerViewFramework`)
+  - MGPlayerView (from `../`)
 
 SPEC REPOS:
   trunk:
     - Masonry
 
 EXTERNAL SOURCES:
-  MGPlayerViewFramework:
-    :path: "../MGPlayerViewFramework"
+  MGPlayerView:
+    :path: "../"
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerViewFramework: 695f6dcace8d4a6f8145ff4135f9336518df45cb
+  MGPlayerView: 7600c9a0bea605cad886c61e9be0bd9a97453c74
 
-PODFILE CHECKSUM: 0d84d998ca6d38309629e637515652db938185f0
+PODFILE CHECKSUM: 3b76765c2d912bb83a6e41768a0bed1e6e01a615
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.3

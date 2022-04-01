@@ -305,7 +305,7 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MGPlayerView_Example/Pods-MGPlayerView_Example-frameworks.sh",
-				"${PODS_ROOT}/../../MGPlayerViewFramework/MGPlayerView.framework",
+				"${BUILT_PRODUCTS_DIR}/MGPlayerView/MGPlayerView.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";

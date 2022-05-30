@@ -42,12 +42,49 @@
         self.backBtn.backgroundColor =[UIColor clearColor];
         self.playBtn.backgroundColor =[UIColor clearColor];
         self.lockBtn.backgroundColor =[UIColor clearColor];
+        
+        [self.bottomToolView addSubview:self.currentTimeLab];
+        [self.bottomToolView addSubview:self.sumTimeLab];
+        [self.bottomToolView addSubview:self.progressView];
+        [self.bottomToolView addSubview:self.slider];
+        
         self.maskViewSate =YES;
         self.lockBtn.hidden =YES;
         [self hiddenMaskView];
         self.hidden =YES;
+        [self updateUILayout];
     }
     return self;
+}
+
+-(void)updateUILayout {
+    [self.currentTimeLab mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(17);
+        make.bottom.equalTo(self.progressView.mas_top).offset(-16);
+        make.left.equalTo(self.bottomToolView.mas_leftMargin).offset(20);
+    }];
+    
+    [self.sumTimeLab mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.width.mas_equalTo(50);
+        make.height.mas_equalTo(17);
+        make.bottom.equalTo(self.progressView.mas_top).offset(-16);
+        make.right.equalTo(self.bottomToolView.mas_rightMargin).offset(-20);
+    }];
+    
+    [self.progressView mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.bottomToolView.mas_leftMargin).offset(20);
+        make.right.equalTo(self.bottomToolView.mas_rightMargin).offset(-20);
+        make.bottom.equalTo(self.playBtn.mas_top).offset(-10);
+        make.height.mas_equalTo(1);
+    }];
+    
+    [self.slider mas_updateConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(self.bottomToolView.mas_leftMargin).offset(20);
+        make.right.equalTo(self.bottomToolView.mas_rightMargin).offset(-20);
+        make.centerY.equalTo(self.progressView.mas_centerY).offset(9.5); 
+        make.height.mas_equalTo(20);
+    }];
 }
 
 -(void)hiddenMaskView{
@@ -130,6 +167,45 @@
     }
 }
 
+- (void)touchSliderValueChangeEvent:(UISlider *)sender {
+    if (self.delegate &&[self.delegate respondsToSelector:@selector(fullMaskViewSliderValueChangeEvent:)]) {
+        [self.delegate fullMaskViewSliderValueChangeEvent:sender];
+    }
+}
+
+- (void)touchSliderTouchDownEvent:(UISlider *)sender {
+    [self.countdown setFireDate:[NSDate distantFuture]];
+    self.seekState =YES;
+}
+
+- (void)touchSliderTouchUpInsideEvent:(UISlider *)sender {
+    if (self.delegate &&[self.delegate respondsToSelector:@selector(fullMaskViewSliderTouchUpInsideEvent:)]) {
+        [self.delegate fullMaskViewSliderTouchUpInsideEvent:self.slider];
+    }
+    [self.countdown setFireDate:[NSDate dateWithTimeIntervalSinceNow:MaskViewHiddenWaitingTime]];
+    self.seekState =NO;
+}
+
+- (void)touchSliderTouchDragExitEvent:(UISlider *)sender {
+    self.seekState =NO;
+}
+
+- (void)touchSliderTouchCancelEvent:(UISlider *)sender {
+    self.seekState =NO;
+}
+
+- (void)touchTapSliderEvent:(UITapGestureRecognizer *)recognizer {
+    if ([recognizer.view isKindOfClass:[UISlider class]]) {
+        UISlider *slider = (UISlider *)recognizer.view;
+        CGPoint point    = [recognizer locationInView:slider];
+        CGFloat length   = slider.frame.size.width;
+        CGFloat tapValue = point.x / length;
+        self.slider.value =tapValue;
+        if (self.delegate &&[self.delegate respondsToSelector:@selector(fullMaskViewSliderTapEvent:)]) {
+            [self.delegate fullMaskViewSliderTapEvent:self.slider];
+        }
+    }
+}
 //监听 timeControlStatus 播放状态，播放中允许旋转屏幕
 -(void)observeValueForKeyPath:(NSString *)keyPath
                       ofObject:(id)object
@@ -241,5 +317,61 @@
     return _lockBtn;
 }
 
+- (UILabel *)currentTimeLab {
+    if (!_currentTimeLab) {
+        _currentTimeLab = [[UILabel alloc] init];
+        _currentTimeLab.textColor = [UIColor whiteColor];
+        _currentTimeLab.font = [UIFont systemFontOfSize:10];
+        _currentTimeLab.textAlignment = NSTextAlignmentCenter;
+        _currentTimeLab.text = @"00:00";
+        _currentTimeLab.hidden = YES;
+    }
+    return _currentTimeLab;
+}
+
+- (UILabel *)sumTimeLab {
+    if (!_sumTimeLab) {
+        _sumTimeLab = [[UILabel alloc] init];
+        _sumTimeLab.font = [UIFont systemFontOfSize:10];
+        _sumTimeLab.textColor = [UIColor whiteColor];
+        _sumTimeLab.textAlignment = NSTextAlignmentCenter;
+        _sumTimeLab.text = @"00:00";
+        _sumTimeLab.hidden = YES;
+    }
+    return _sumTimeLab;
+}
+
+- (UIProgressView *)progressView {
+    if (!_progressView) {
+        _progressView = [[UIProgressView alloc] init];
+        _progressView.progressTintColor = [UIColor whiteColor];
+        _progressView.progressTintColor = [UIColor redColor];
+        _progressView.progress = 0.0;
+        _progressView.progressViewStyle = UIProgressViewStyleBar;
+        _progressView.backgroundColor =[UIColor grayColor];
+        _progressView.hidden = YES;
+    }
+    return _progressView;
+}
+
+- (CNPSlider *)slider {
+    if (!_slider) {
+        _slider = [[CNPSlider alloc] init];
+        //_slider.sliderHeight = 2;
+        _slider.maximumTrackTintColor = [UIColor clearColor];
+        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage")] forState:UIControlStateNormal];
+        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage_h")] forState:UIControlStateHighlighted];
+        [_slider addTarget:self action:@selector(touchSliderValueChangeEvent:) forControlEvents:(UIControlEventValueChanged)];
+        [_slider addTarget:self action:@selector(touchSliderTouchDownEvent:) forControlEvents:(UIControlEventTouchDown)];
+        [_slider addTarget:self action:@selector(touchSliderTouchUpInsideEvent:) forControlEvents:(UIControlEventTouchUpInside)];
+        [_slider addTarget:self action:@selector(touchSliderTouchDragExitEvent:) forControlEvents:(UIControlEventTouchDragExit)];
+        [_slider addTarget:self action:@selector(touchSliderTouchCancelEvent:) forControlEvents:(UIControlEventTouchCancel)];
+        //点击slider
+        UITapGestureRecognizer *sliderTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(touchTapSliderEvent:)];
+        [_slider addGestureRecognizer:sliderTap];
+        _slider.hidden = YES;
+    }
+    return _slider;
+}
 
 @end

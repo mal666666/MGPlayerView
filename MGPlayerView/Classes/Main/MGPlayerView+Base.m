@@ -10,8 +10,9 @@
 #import "PlayerGestureView.h"
 #import <AVFoundation/AVFoundation.h>
 #import "MGPlayerView+Property.h"
+#import "NSString+customTime.h"
 
-@interface MGPlayerView ()<CNPlayerGestureViewDelegate>
+@interface MGPlayerView ()<CNPlayerGestureViewDelegate,SmallMaskViewDelegate,FullMaskViewDelegate>
 
 @end
 
@@ -85,5 +86,38 @@
     }
 }
 
+#pragma mark  ---smallMaskViewDelegate---
+
+-(void)smallMaskViewSliderValueChangeEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    self.smallMaskView.currentTimeLab.text = [NSString customTimeWithSecond:dur*slider.value];
+}
+
+-(void)smallMaskViewSliderTouchUpInsideEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    [self.contentView.playerLayer.player seekToTime:CMTimeMake(dur*slider.value, 1)];
+}
+
+-(void)smallMaskViewSliderTapEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    [self.contentView.playerLayer.player seekToTime:CMTimeMake(dur*slider.value, 1)];
+}
+
+#pragma mark  ---fullMaskViewDelegate---
+
+-(void)fullMaskViewSliderValueChangeEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    self.fullMaskView.currentTimeLab.text = [NSString customTimeWithSecond:dur*slider.value];
+}
+
+-(void)fullMaskViewSliderTouchUpInsideEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    [self.contentView.playerLayer.player seekToTime:CMTimeMake(dur*slider.value, 1)];
+}
+
+-(void)fullMaskViewSliderTapEvent:(UISlider *)slider{
+    Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+    [self.contentView.playerLayer.player seekToTime:CMTimeMake(dur*slider.value, 1)];
+}
 
 @end

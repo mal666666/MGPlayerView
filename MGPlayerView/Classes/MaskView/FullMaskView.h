@@ -9,14 +9,36 @@
 #import <UIKit/UIKit.h>
 #import "PlayerViewProtocol.h"
 #import "PlayerGestureView.h"
+#import "CNPSlider.h"
 
 NS_ASSUME_NONNULL_BEGIN
+
+@protocol FullMaskViewDelegate <NSObject>
+
+@optional
+-(void)fullMaskViewSliderValueChangeEvent:(UISlider *)slider;
+-(void)fullMaskViewSliderTouchUpInsideEvent:(UISlider *)slider;
+-(void)fullMaskViewSliderTapEvent:(UISlider*)slider;
+
+@end
+
 
 @interface FullMaskView : UIView<PlayerViewProtocol>
 
 @property (nonatomic, strong) UIButton *lockBtn;
 //手势层
 @property(strong, nonatomic) PlayerGestureView *gestureView;
+//进度条
+@property (nonatomic, strong) CNPSlider *slider;
+@property (nonatomic, strong) UIProgressView *progressView;
+//当前时间
+@property (nonatomic, strong) UILabel *currentTimeLab;
+//总时间
+@property (nonatomic, strong) UILabel *sumTimeLab;
+//快进状态
+@property (nonatomic, assign) BOOL  seekState;
+// delegate
+@property (nonatomic,   weak) id <FullMaskViewDelegate>delegate;
 
 
 -(void)hiddenMaskView;

@@ -12,6 +12,7 @@
 #import <AVFoundation/AVFoundation.h>
 #import "BrightnessView.h"
 #import "MGPlayerView+Property.h"
+#import "NSString+customTime.h"
 
 
 @interface MGPlayerView()
@@ -67,13 +68,55 @@
 //设置播放view层
 -(void)setPlayUrl:(NSString *)url{
     [self.contentView setPlayUrl:url];
-    [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
-    [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+    [self playerCallback];
 }
 -(void)setUrl:(NSURL *)url{
     [self.contentView setUrl:url];
+    [self playerCallback];
+}
+//播放回调
+-(void)playerCallback {
     [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
+    __weak typeof(self) weakSelf =self;
+    [self.contentView.playerLayer.player addPeriodicTimeObserverForInterval: CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+        Float64 cur = CMTimeGetSeconds(time);
+        Float64 dur = CMTimeGetSeconds(weakSelf.contentView.playerLayer.player.currentItem.duration);
+        //NSLog(@"%f-----%f",cur,dur);
+        if (isnan(dur)) {
+            //smallMaskView
+            weakSelf.smallMaskView.currentTimeLab.hidden = YES;
+            weakSelf.smallMaskView.sumTimeLab.hidden = YES;
+            weakSelf.smallMaskView.slider.hidden = YES;
+            weakSelf.smallMaskView.progressView.hidden = YES;
+            //fullMaskView
+            weakSelf.fullMaskView.currentTimeLab.hidden = YES;
+            weakSelf.fullMaskView.sumTimeLab.hidden = YES;
+            weakSelf.fullMaskView.slider.hidden = YES;
+            weakSelf.fullMaskView.progressView.hidden = YES;
+        }else{
+            if (!weakSelf.smallMaskView.seekState && !weakSelf.fullMaskView.seekState) {
+                //smallMaskView
+                weakSelf.smallMaskView.currentTimeLab.hidden = NO;
+                weakSelf.smallMaskView.sumTimeLab.hidden = NO;
+                weakSelf.smallMaskView.slider.hidden = NO;
+                weakSelf.smallMaskView.progressView.hidden = NO;
+                //weakSelf.smallMaskView.progressView.progress =player.bufferDuration/player.duration;
+                weakSelf.smallMaskView.currentTimeLab.text =[NSString customTimeWithSecond:cur];
+                weakSelf.smallMaskView.sumTimeLab.text =[NSString customTimeWithSecond:dur];
+                weakSelf.smallMaskView.slider.value = cur/dur;
+                //fullMaskView
+                weakSelf.fullMaskView.currentTimeLab.hidden = NO;
+                weakSelf.fullMaskView.sumTimeLab.hidden = NO;
+                weakSelf.fullMaskView.slider.hidden = NO;
+                weakSelf.fullMaskView.progressView.hidden = NO;
+                //weakSelf.smallMaskView.progressView.progress =player.bufferDuration/player.duration;
+                weakSelf.fullMaskView.currentTimeLab.text =[NSString customTimeWithSecond:cur];
+                weakSelf.fullMaskView.sumTimeLab.text =[NSString customTimeWithSecond:dur];
+                weakSelf.fullMaskView.slider.value = cur/dur;
+            }
+        }
+    }];
 }
 //播放
 -(void)play{
@@ -169,6 +212,7 @@
         [self addSubview:_smallMaskView];
         _smallMaskView.clipsToBounds =YES;
         _smallMaskView.delegateUI =self;
+        _smallMaskView.delegate = (id)self;
         [_smallMaskView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(_smallMaskView.superview).insets(UIEdgeInsetsZero);
         }];
@@ -182,6 +226,7 @@
         [self addSubview:_fullMaskView];
         _fullMaskView.clipsToBounds =YES;
         _fullMaskView.delegateUI =self;
+        _fullMaskView.delegate = (id)self;
         [_fullMaskView mas_makeConstraints:^(MASConstraintMaker *make) {
             make.edges.equalTo(_fullMaskView.superview).insets(UIEdgeInsetsZero);
         }];

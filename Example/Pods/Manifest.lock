@@ -1,9 +1,9 @@
 PODS:
   - Masonry (1.1.0)
-  - MGPlayerView (0.2.0):
+  - MGPlayerView (0.4.0):
     - Masonry
-    - MGPlayerView/All (= 0.2.0)
-  - MGPlayerView/All (0.2.0):
+    - MGPlayerView/All (= 0.4.0)
+  - MGPlayerView/All (0.4.0):
     - Masonry
     - MGPlayerView/Category
     - MGPlayerView/ContentView
@@ -11,24 +11,24 @@ PODS:
     - MGPlayerView/Main
     - MGPlayerView/MaskView
     - MGPlayerView/Protocol
-  - MGPlayerView/Category (0.2.0):
+  - MGPlayerView/Category (0.4.0):
     - Masonry
-  - MGPlayerView/ContentView (0.2.0):
+  - MGPlayerView/ContentView (0.4.0):
     - Masonry
-  - MGPlayerView/GestureView (0.2.0):
+  - MGPlayerView/GestureView (0.4.0):
     - Masonry
     - MGPlayerView/Protocol
-  - MGPlayerView/Main (0.2.0):
+  - MGPlayerView/Main (0.4.0):
     - Masonry
     - MGPlayerView/ContentView
     - MGPlayerView/GestureView
     - MGPlayerView/MaskView
-  - MGPlayerView/MaskView (0.2.0):
+  - MGPlayerView/MaskView (0.4.0):
     - Masonry
     - MGPlayerView/Category
     - MGPlayerView/GestureView
     - MGPlayerView/Protocol
-  - MGPlayerView/Protocol (0.2.0):
+  - MGPlayerView/Protocol (0.4.0):
     - Masonry
 
 DEPENDENCIES:
@@ -44,7 +44,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
-  MGPlayerView: 7600c9a0bea605cad886c61e9be0bd9a97453c74
+  MGPlayerView: 6bbe94a99b666620c67b45f8eae569268dd84c2c
 
 PODFILE CHECKSUM: 3b76765c2d912bb83a6e41768a0bed1e6e01a615
 

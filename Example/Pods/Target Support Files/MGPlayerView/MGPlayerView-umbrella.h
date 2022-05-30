@@ -20,6 +20,7 @@
 #import "MGPlayerView.h"
 #import "PlayerFullScreenRotateAnimator.h"
 #import "PlayerFullScreenViewController.h"
+#import "CNPSlider.h"
 #import "FullMaskLockView.h"
 #import "FullMaskView.h"
 #import "SmallMaskView.h"

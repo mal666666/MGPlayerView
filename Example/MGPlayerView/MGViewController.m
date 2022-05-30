@@ -21,6 +21,7 @@
     MGPlayerView *playerView =[[MGPlayerView alloc]initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.width *9/16)];
     [self.view addSubview:playerView];
     [playerView setPlayUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
+    [playerView setPlayUrl:@"http://mm.pushitongda.com:9999/ipfs/Qmd6cN231gVhRKw5seG2SpzS7GtFHZfkYzEVXf4GpASout"];
     [playerView supportFullScreenWithVC:self];
     playerView.delegateUI =self;
     [playerView play];

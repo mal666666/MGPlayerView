@@ -20,6 +20,7 @@
 @property(strong, nonatomic) UIViewController *smallVC;
 @property(strong, nonatomic) PlayerFullScreenViewController *fullVC;
 @property(strong, nonatomic) PlayerFullScreenRotateAnimator *animator;
+@property(strong, nonatomic) id obs;
 
 @end
 
@@ -67,10 +68,18 @@
 }
 //设置播放view层
 -(void)setPlayUrl:(NSString *)url{
+    if (self.obs) {
+        [self.contentView.playerLayer.player removeTimeObserver:self.obs];
+        self.obs = nil;
+    }
     [self.contentView setPlayUrl:url];
     [self playerCallback];
 }
 -(void)setUrl:(NSURL *)url{
+    if (self.obs) {
+        [self.contentView.playerLayer.player removeTimeObserver:self.obs];
+        self.obs = nil;
+    }
     [self.contentView setUrl:url];
     [self playerCallback];
 }
@@ -79,7 +88,7 @@
     [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     [self.contentView.playerLayer.player addObserver:self.fullMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];
     __weak typeof(self) weakSelf =self;
-    [self.contentView.playerLayer.player addPeriodicTimeObserverForInterval: CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
+    self.obs = [self.contentView.playerLayer.player addPeriodicTimeObserverForInterval: CMTimeMake(1, 1) queue:dispatch_get_main_queue() usingBlock:^(CMTime time) {
         Float64 cur = CMTimeGetSeconds(time);
         Float64 dur = CMTimeGetSeconds(weakSelf.contentView.playerLayer.player.currentItem.duration);
         //NSLog(@"%f-----%f",cur,dur);

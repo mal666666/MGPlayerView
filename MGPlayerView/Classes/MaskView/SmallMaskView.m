@@ -67,15 +67,15 @@
     }];
     
     [self.progressView mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.currentTimeLab.mas_right).offset(2);
-        make.right.equalTo(self.sumTimeLab.mas_left).offset(-2);
+        make.left.equalTo(self.currentTimeLab.mas_right).offset(8);
+        make.right.equalTo(self.sumTimeLab.mas_left).offset(-8);
         make.height.mas_equalTo(1);
         make.centerY.equalTo(self.playBtn.mas_centerY).offset(0);
     }];
     
     [self.slider mas_updateConstraints:^(MASConstraintMaker *make) {
-        make.left.equalTo(self.currentTimeLab.mas_right).offset(2);
-        make.right.equalTo(self.sumTimeLab.mas_left).offset(-2);
+        make.left.equalTo(self.currentTimeLab.mas_right).offset(8);
+        make.right.equalTo(self.sumTimeLab.mas_left).offset(-8);
         make.centerY.equalTo(self.progressView.mas_centerY).offset(9.5); // (20-1)/2
         make.height.mas_equalTo(20);
     }];

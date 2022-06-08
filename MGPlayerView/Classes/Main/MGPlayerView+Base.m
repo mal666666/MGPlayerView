@@ -49,6 +49,13 @@
             [self.contentView.playerLayer.player pause];
             state = NO;
         }else{
+            Float64 cur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.currentTime);
+            Float64 dur = CMTimeGetSeconds(self.contentView.playerLayer.player.currentItem.duration);
+            //NSLog(@"%f====%f",cur,dur);
+            if (cur == dur) {// 如果播放结束重播
+                [self.contentView.playerLayer.player seekToTime:kCMTimeZero];
+            }
+            
             [self.contentView.playerLayer.player play];
             state = YES;
         }

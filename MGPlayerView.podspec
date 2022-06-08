@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGPlayerView'
-  s.version          = '0.4.0'
+  s.version          = '0.4.1'
   s.summary          = 'A short description of MGPlayerView.'
 
   s.description      = <<-DESC
@@ -75,7 +75,6 @@ Pod::Spec.new do |s|
 
   # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'Masonry'
-#  s.dependency 'ijkplayer'
   s.prefix_header_contents = '#import"Masonry.h"'
   
 end

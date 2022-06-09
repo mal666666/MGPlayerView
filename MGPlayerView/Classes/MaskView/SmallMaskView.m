@@ -76,8 +76,8 @@
     [self.slider mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.currentTimeLab.mas_right).offset(8);
         make.right.equalTo(self.sumTimeLab.mas_left).offset(-8);
-        make.centerY.equalTo(self.progressView.mas_centerY).offset(9.5); // (20-1)/2
-        make.height.mas_equalTo(20);
+        make.centerY.equalTo(self.progressView.mas_centerY);
+        make.height.mas_equalTo(30);
     }];
 }
 
@@ -164,7 +164,9 @@
         [self.delegate smallMaskViewSliderTouchUpInsideEvent:self.slider];
     }
     [self.countdown setFireDate:[NSDate dateWithTimeIntervalSinceNow:MaskViewHiddenWaitingTime]];
-    self.seekState =NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5*NSEC_PER_SEC) , dispatch_get_main_queue(), ^{
+        self.seekState =NO;
+    });
 }
 
 - (void)touchSliderTouchDragExitEvent:(UISlider *)sender {
@@ -283,8 +285,8 @@
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang")] forState:UIControlStateSelected];
-        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting")] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang_s")] forState:UIControlStateSelected];
+        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting_s")] forState:UIControlStateNormal];
         _playBtn.selected = YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {

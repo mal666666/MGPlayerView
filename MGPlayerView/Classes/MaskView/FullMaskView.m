@@ -82,8 +82,8 @@
     [self.slider mas_updateConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(self.bottomToolView.mas_leftMargin).offset(20);
         make.right.equalTo(self.bottomToolView.mas_rightMargin).offset(-20);
-        make.centerY.equalTo(self.progressView.mas_centerY).offset(9.5); 
-        make.height.mas_equalTo(20);
+        make.centerY.equalTo(self.progressView.mas_centerY); 
+        make.height.mas_equalTo(30);
     }];
 }
 
@@ -183,7 +183,9 @@
         [self.delegate fullMaskViewSliderTouchUpInsideEvent:self.slider];
     }
     [self.countdown setFireDate:[NSDate dateWithTimeIntervalSinceNow:MaskViewHiddenWaitingTime]];
-    self.seekState =NO;
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 1.5*NSEC_PER_SEC) , dispatch_get_main_queue(), ^{
+        self.seekState =NO;
+    });
 }
 
 - (void)touchSliderTouchDragExitEvent:(UISlider *)sender {

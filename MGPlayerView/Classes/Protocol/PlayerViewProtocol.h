@@ -30,6 +30,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)toFullScreen:(void (^__nullable)(void))completion;
 //退出小屏
 -(void)quitSmallScreen;
+//隐藏加载中菊花
+-(void)activityIndicaHidden:(BOOL)state;
 
 @end
 

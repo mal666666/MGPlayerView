@@ -35,8 +35,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) UILabel *sumTimeLab;
 //快进状态
 @property (nonatomic, assign) BOOL  seekState;
-// delegate
+//delegate
 @property (nonatomic,   weak) id <SmallMaskViewDelegate>delegate;
+//菊花状态
+@property (nonatomic, strong) UIActivityIndicatorView *loadingView;
 
 -(void)hiddenMaskView;
 -(void)showMaskView;

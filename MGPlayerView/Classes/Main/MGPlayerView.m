@@ -83,6 +83,20 @@
     [self.contentView setUrl:url];
     [self playerCallback];
 }
+//隐藏加载中菊花
+-(void)activityIndicaHidden:(BOOL)state {
+    if (state) {
+        self.smallMaskView.loadingView.hidesWhenStopped = NO;
+        self.smallMaskView.loadingView.hidden = YES;
+        self.fullMaskView.loadingView.hidesWhenStopped = NO;
+        self.fullMaskView.loadingView.hidden = YES;
+    }else{
+        self.smallMaskView.loadingView.hidesWhenStopped = YES;
+        self.smallMaskView.loadingView.hidden = NO;
+        self.fullMaskView.loadingView.hidesWhenStopped = YES;
+        self.fullMaskView.loadingView.hidden = NO;
+    }
+}
 //播放回调
 -(void)playerCallback {
     [self.contentView.playerLayer.player addObserver:self.smallMaskView forKeyPath:@"timeControlStatus" options:NSKeyValueObservingOptionNew context:nil];

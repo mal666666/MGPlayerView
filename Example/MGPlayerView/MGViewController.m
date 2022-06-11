@@ -23,6 +23,7 @@
     [playerView setPlayUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
     [playerView setPlayUrl:@"http://mm.pushitongda.com:9999/ipfs/Qmd6cN231gVhRKw5seG2SpzS7GtFHZfkYzEVXf4GpASout"];
     [playerView supportFullScreenWithVC:self];
+//    [playerView activityIndicaHidden:YES];
     playerView.delegateUI =self;
     [playerView play];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1500 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
@@ -48,11 +49,6 @@
 
 -(UIInterfaceOrientationMask)supportedInterfaceOrientations{
     return UIInterfaceOrientationMaskPortrait;
-}
-
-- (void)didReceiveMemoryWarning{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

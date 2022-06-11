@@ -25,8 +25,6 @@
 //锁屏按钮倒计时
 @property (nonatomic, strong) NSTimer *lockBtnCountdown;
 
-
-
 @end
 
 @implementation FullMaskView
@@ -47,6 +45,8 @@
         [self.bottomToolView addSubview:self.sumTimeLab];
         [self.bottomToolView addSubview:self.progressView];
         [self.bottomToolView addSubview:self.slider];
+        
+        [self addSubview:self.loadingView];
         
         self.maskViewSate =YES;
         self.lockBtn.hidden =YES;
@@ -84,6 +84,10 @@
         make.right.equalTo(self.bottomToolView.mas_rightMargin).offset(-20);
         make.centerY.equalTo(self.progressView.mas_centerY); 
         make.height.mas_equalTo(30);
+    }];
+    
+    [self.loadingView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.center.mas_equalTo(self);
     }];
 }
 
@@ -219,8 +223,12 @@
             AVPlayerTimeControlStatus status = [[change objectForKey:NSKeyValueChangeNewKey]integerValue];
             if (status == AVPlayerTimeControlStatusPlaying) {
                 self.playBtn.selected =NO;
+                [self.loadingView stopAnimating];
+            }else if (status == AVPlayerTimeControlStatusPaused){
+                self.playBtn.selected =YES;
             }else{
                 self.playBtn.selected =YES;
+                [self.loadingView startAnimating];
             }
         } else {
             // ios10.0之后才能够监听到暂停后继续播放的状态，ios10.0之前监测不到这个状态
@@ -245,7 +253,8 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         _topToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_topToolView];
         [_topToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -259,7 +268,8 @@
 - (UIView *)bottomToolView {
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
-        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         _bottomToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_bottomToolView];
         [_bottomToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -274,7 +284,8 @@
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_backBtn addTarget:self action:@selector(touchLeftBackButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"fanhui")] forState:UIControlStateNormal];
+//        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"fanhui")] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [_backBtn setImageEdgeInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
         [self.topToolView addSubview:_backBtn];
         [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -290,8 +301,10 @@
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang")] forState:UIControlStateSelected];
-        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting")] forState:UIControlStateNormal];
+//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang")] forState:UIControlStateSelected];
+//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting")] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:@"bofang" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_playBtn setImage:[UIImage imageNamed:@"zanting" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         _playBtn.selected =YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -307,8 +320,10 @@
     if (!_lockBtn) {
         _lockBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_lockBtn addTarget:self action:@selector(touchLockButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
-        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"suoping")] forState:UIControlStateSelected];
-        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"jiesuo")] forState:UIControlStateNormal];
+//        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"suoping")] forState:UIControlStateSelected];
+//        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"jiesuo")] forState:UIControlStateNormal];
+        [_lockBtn setImage:[UIImage imageNamed:@"suoping" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_lockBtn setImage:[UIImage imageNamed:@"jiesuo" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [self addSubview:_lockBtn];
         [_lockBtn mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.height.offset(44);
@@ -361,8 +376,10 @@
         _slider = [[CNPSlider alloc] init];
         //_slider.sliderHeight = 2;
         _slider.maximumTrackTintColor = [UIColor clearColor];
-        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage")] forState:UIControlStateNormal];
-        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage_h")] forState:UIControlStateHighlighted];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage_h" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateHighlighted];
+//        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage")] forState:UIControlStateNormal];
+//        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage_h")] forState:UIControlStateHighlighted];
         [_slider addTarget:self action:@selector(touchSliderValueChangeEvent:) forControlEvents:(UIControlEventValueChanged)];
         [_slider addTarget:self action:@selector(touchSliderTouchDownEvent:) forControlEvents:(UIControlEventTouchDown)];
         [_slider addTarget:self action:@selector(touchSliderTouchUpInsideEvent:) forControlEvents:(UIControlEventTouchUpInside)];
@@ -374,6 +391,14 @@
         _slider.hidden = YES;
     }
     return _slider;
+}
+
+- (UIActivityIndicatorView *)loadingView {
+    if (!_loadingView) {
+        _loadingView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
+        _loadingView.hidden = YES;
+    }
+    return _loadingView;
 }
 
 @end

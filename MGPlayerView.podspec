@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGPlayerView'
-  s.version          = '0.4.3'
+  s.version          = '0.4.4'
   s.summary          = 'A short description of MGPlayerView.'
 
   s.description      = <<-DESC
@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
 #  s.source_files = 'MGPlayerView/Classes/**/*'
   
   s.resource_bundles = {
-    'MGPlayerView' => ['MGPlayerView/Assets/Img/*.png']
+    'MGPlayerView' => ['MGPlayerView/Assets/*.{xcassets}']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
@@ -74,7 +74,8 @@ Pod::Spec.new do |s|
   # s.xcconfig     = { 'HEADER_SEARCH_PATHS' => '$(SDKROOT)/usr/include/libxml2'}
 
   # s.frameworks = 'UIKit', 'MapKit'
+  # s.prefix_header_file = true
   s.dependency 'Masonry'
-  s.prefix_header_contents = '#import"Masonry.h"'
-  
+  s.prefix_header_contents = '#import"Masonry.h"', '#import"Common.h"'
+
 end

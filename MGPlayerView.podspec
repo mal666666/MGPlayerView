@@ -65,7 +65,7 @@ Pod::Spec.new do |s|
 #  s.source_files = 'MGPlayerView/Classes/**/*'
   
   s.resource_bundles = {
-    'MGPlayerView' => ['MGPlayerView/Assets/*.{xcassets}']
+      'MGPlayerView' => ['MGPlayerView/Assets/Img/*.png'] # *.{xcassets}
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'

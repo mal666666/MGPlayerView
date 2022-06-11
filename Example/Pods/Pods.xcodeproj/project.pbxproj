@@ -7,223 +7,282 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08768922040D099730DFA344BDF6EB06 /* PlayerFullScreenRotateAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 68848E2CA9EA5E21E262D7EFA6115DAE /* PlayerFullScreenRotateAnimator.m */; };
-		08DF4896A5F89F031F7E1C305CE9A1E0 /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */; };
-		0969BCFC85A3C87ED17338623C2A7AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E36EC177325A4294153A87D7F9AD6B9C /* Assets.xcassets */; };
-		0A70E3CA27F41640FA0B7838736E5AF3 /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */; };
-		0C46CD9C84A742763331B7454B6CC2D9 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		15ED6F425F1CFA59A4934E34C7716AA7 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1898E8416B7941E43EC746957AA5F03E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		1A733F1995D616C022F14F98D440CABD /* BrightnessView.h in Headers */ = {isa = PBXBuildFile; fileRef = 750B60F4900A4F5DB290E061DD2BA97F /* BrightnessView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B857F8CA614CA5016DBDBC8D417051F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */; };
-		1C3B8916E7F6CBAAB3D9DA06C9F641A0 /* SmallMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 13C717E661DFCC00506C7CA8BF5D13F9 /* SmallMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1E343499338E5271BB4121F1396D9DD6 /* CNPSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = DED900E54CB6154443950DC3009C5251 /* CNPSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1ED36780406F34D00376AD29CF067FB1 /* MGPlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F9133B69459DEF7C766EE24C2FEF95 /* MGPlayerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2007D45AD11ED785E42392ECE3CFE6F5 /* MGPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = D90273E7B7DB8F4B0AB74FDFFDD65A30 /* MGPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		003EF9932CEF17D624879D46B15A3DDF /* thumbImage_h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = E9BD4973FF7821B26153691CAA13E9CE /* thumbImage_h@3x.png */; };
+		0378ED5C29D4141040EFD3DC956DC42D /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		08768922040D099730DFA344BDF6EB06 /* PlayerFullScreenRotateAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A076F362E1B20A3E4217FC33D09FE51 /* PlayerFullScreenRotateAnimator.m */; };
+		0B1703133BED6257DC836E86C722C874 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */; };
+		140A4485E3BDACEF73ADDD79F0CB96C7 /* bofang_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0022AF34E5883B0AC7A84B3ACC814BAF /* bofang_s@2x.png */; };
+		1A733F1995D616C022F14F98D440CABD /* BrightnessView.h in Headers */ = {isa = PBXBuildFile; fileRef = 08AF31E61342E73BB70F2FAEF24C0EF4 /* BrightnessView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1A7AFB3283EF4369011E2CB7814382A1 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
+		1B09DC9100DDF248C19A5F39AB304036 /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C3B8916E7F6CBAAB3D9DA06C9F641A0 /* SmallMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 56CD8CD0DE7C8993409A5C73E05DD356 /* SmallMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E343499338E5271BB4121F1396D9DD6 /* CNPSlider.h in Headers */ = {isa = PBXBuildFile; fileRef = F809246A8CA8E47F947A2C6DAE549D23 /* CNPSlider.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E99CCD6FAF3EE6B8E0291C0ACCA62CD /* zanting@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 857028AB26A3F8967AA1841E4D32D118 /* zanting@2x.png */; };
+		1EBA8B220B279EA094955BFE6DD221DC /* bofang@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = EB77657E0D917AAD70D16E568991910A /* bofang@2x.png */; };
+		1ED36780406F34D00376AD29CF067FB1 /* MGPlayerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 59334F6A32F5FB5136468FD2AE580236 /* MGPlayerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA05B9DCCA68A231FD5AD12FCB92873 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */; };
+		2007D45AD11ED785E42392ECE3CFE6F5 /* MGPlayerView.h in Headers */ = {isa = PBXBuildFile; fileRef = C867E3C8372DC6585061FE02CE44E547 /* MGPlayerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2527BBDFCEF9B3691BEB33FE25090035 /* Pods-MGPlayerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16F139CF48482CCD5861619A64976445 /* Pods-MGPlayerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2857F65170AD443FC1B560C4D4A1582B /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2E4F4E3774465542479D61AE7B4D3324 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26AA158AB3882431AA96DF48EF154C95 /* jiesuo@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 16D44BF19398A7951D3F5DC5BF61F547 /* jiesuo@3x.png */; };
+		2860F9B387CCE5C0C66E5D04CEB90614 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A287976824F43F65BF63D9A3A861529 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F7D86383D56F3042D8DFEC39569B1D6 /* Pods-MGPlayerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BAD9EE3C83DFF434A698FD50A93AE1EE /* Pods-MGPlayerView_Tests-dummy.m */; };
-		339101D2DB340273DF47D6172B5F1FA1 /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */; };
-		3AA30254C0EC9B1E3F40572A90395E1D /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		414BF5BF78C7B4FE6E48B2D5BA41FBEA /* MASUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45A2D4954AA42A0137D4D043CFC602E3 /* SmallMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF0D9A58FC9057B068CE02235B00D65B /* SmallMaskView.m */; };
-		45F452A65965A877830ED497C3E46413 /* BrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = 45DB223B4C2EA51FE448CACC1A126948 /* BrightnessView.m */; };
-		463691D515E6435BD1A80A24405F3AD4 /* FullMaskLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4105944848457ED2CA360D01674AE7A /* FullMaskLockView.m */; };
-		4CDB09D01DE4DB12AA6FDF288513BCDD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
-		4DD2A7EC137AF361AFF1CAFBCE6D5F28 /* MGPlayerView+Property.h in Headers */ = {isa = PBXBuildFile; fileRef = E146884DECE44997B9BD232FFCC4A3A0 /* MGPlayerView+Property.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		545DF050178C5829F671C9601EC84524 /* Masonry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		554025339CE12BBE83DEA49C25426905 /* FullMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 0BE3FCDAD089B8ABA245ECFAE52B75E2 /* FullMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		57ABF3C8DC413DF1E27330EDDA236DFB /* MGPlayerView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = 8434438671E4671D8365B3643A4CFD17 /* MGPlayerView+Base.m */; };
-		5C8ECEF3ACDCE0495DECB8E8BF9ED002 /* PlayerFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FC1549A7BD023ED0561EBD974193B2BF /* PlayerFullScreenViewController.m */; };
+		32E6007F5B71B3A4E7F198A79026F843 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		32F551769CAA92B3E34E90F1B9DA2EC7 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */; };
+		3418306E7905ACCA5F155186BDA37B47 /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		369380E42D9A0B4708DFDC5E57F7E492 /* suoping@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0CFD6FF1C1EFB8B5D3907ED1D5BAFAB5 /* suoping@3x.png */; };
+		3889F109041175E64F3E775E0F8A11B4 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3D83EE838ED354F81453F675E774358F /* zanting_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 2EBFD80A1F5189347CDDF2F60CC000FA /* zanting_s@3x.png */; };
+		43F877079C756386F8E24DBDEF24168C /* quanping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 47C4F5E585B1C91E05D293273363C4A2 /* quanping@2x.png */; };
+		45A2D4954AA42A0137D4D043CFC602E3 /* SmallMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = F080FC6720C74B4E78BF150080A6E119 /* SmallMaskView.m */; };
+		45F452A65965A877830ED497C3E46413 /* BrightnessView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8C5DB3A0BBA2183CECA57A750136272 /* BrightnessView.m */; };
+		463691D515E6435BD1A80A24405F3AD4 /* FullMaskLockView.m in Sources */ = {isa = PBXBuildFile; fileRef = B944B12AF84A4569E528C935CACE15BE /* FullMaskLockView.m */; };
+		489F61BF605B68A97F6C9283377A6C93 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DD2A7EC137AF361AFF1CAFBCE6D5F28 /* MGPlayerView+Property.h in Headers */ = {isa = PBXBuildFile; fileRef = 6422D0ACE0DD5A2CAFF4C785C03558F8 /* MGPlayerView+Property.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDC68424D7B7CA21BC59FDD9BD6B30C /* brigh@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DEA1810EF046B874946BE7CAEBFA65B /* brigh@3x.png */; };
+		52F5CC3A8CEAA86735695964823867FE /* thumbImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D0A13C2C14FA3469CDC07F3F1A00E943 /* thumbImage@2x.png */; };
+		554025339CE12BBE83DEA49C25426905 /* FullMaskView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2E82CDB2FA5215BCF6918C154CFD9D1B /* FullMaskView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57ABF3C8DC413DF1E27330EDDA236DFB /* MGPlayerView+Base.m in Sources */ = {isa = PBXBuildFile; fileRef = A1251ACECD1FED3E3874CF2DCEAC6BBA /* MGPlayerView+Base.m */; };
+		59D76572A33EC218487CFA7A7C82C851 /* fanhui@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 067BEA2F826B20B0EB61E4F0C5771C93 /* fanhui@3x.png */; };
+		5C8ECEF3ACDCE0495DECB8E8BF9ED002 /* PlayerFullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B38E5BF3D17EB6B0F963E434BE1EF9D /* PlayerFullScreenViewController.m */; };
 		6312D0B94B95ED28D9AB04681D4AB7A1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
+		6656F8272B1CC2C72830AF38E82DFACA /* MASConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */; };
 		67CB970CA6F32D029643205D4F57A252 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		73D68E4EEB26620C14619FE601B9AAD9 /* PlayerGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = EF60476559BB0E85B916FC59690A0CB0 /* PlayerGestureView.m */; };
-		77CCB926803F2369C3811D63EA716A70 /* MASConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		794D6D32EE7791E7B62D42DF646A9C17 /* PlayerViewCallbackProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 736C011BE5648827744F7395841E3372 /* PlayerViewCallbackProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7BE871796FFE1C8C08462A77E4163B83 /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */; };
-		8087059898843C8414E4C2D4285F450F /* MGPlayerView+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AED05BEB268926BD2929995EB538A52 /* MGPlayerView+Base.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86E9A506D57692BF0916F6821F3DABED /* MGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6058F278ACCDE00243F9B0D9B0ED2838 /* MGPlayerView.m */; };
-		87D586C1A08BCEC0B2260A39C81DAEDC /* PlayerFullScreenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A1FFD1EC823E266557060D92058625C /* PlayerFullScreenViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B0F8A1C68749E0042FF8C283DDE70C1 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8B40EAADC67FEE064FD9F5F8E6051FBC /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8E84B2528C3D580605DDBAE4371622A0 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */; };
-		8F81F6DBF7206511E885FEBD2CE14B67 /* PlayerGestureView.h in Headers */ = {isa = PBXBuildFile; fileRef = DA960B973F1BD8FD30AFF8693975472E /* PlayerGestureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		96C72360C25049F712254A3919D3197E /* FullMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = AFEDE0880BDD37D450BB4D7E2A5A929E /* FullMaskView.m */; };
-		97D08BA730291A0A6B34380EDCEE8E26 /* CNPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D0506E27BB7F5F8E53B1B28350AC0F4 /* CNPSlider.m */; };
-		9A73E52ACFD7F472E1CCBD15DCC27826 /* NSString+customTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 367BCECEF0B7960ADAF3CF318CD8F49C /* NSString+customTime.m */; };
-		9CF176DB1B71E0A40FAFBE496CC14EA5 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */; };
-		9ED063FD507F1ADC31263817A0E97296 /* PlayerViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA0220EDE79D571FDA17EF8665C7076 /* PlayerViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		699F592387664C8F9A9A7A18F2C82BBE /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */; };
+		724FB243EBA4FA669FE2F58549E6920A /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		73111119A1C26846F58B7CC2209534AA /* thumbImage_h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6D6BB550273987D525C092879AFC10F9 /* thumbImage_h@2x.png */; };
+		73D68E4EEB26620C14619FE601B9AAD9 /* PlayerGestureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 92856D64FE1F0ABC60C3AAF24F534E89 /* PlayerGestureView.m */; };
+		786A94C6053DE18A33558BE7A3FDAF1D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */; };
+		794D6D32EE7791E7B62D42DF646A9C17 /* PlayerViewCallbackProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 09D5A40E74D9F27A96174B6147F33284 /* PlayerViewCallbackProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C561D620FB2C8BE9E20DD1397952DC1 /* ViewController+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DB09A7383F0AA02912D5CB8E77E5919 /* jiesuo@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A58DCC168CD5ED82688A3EC94FD2B430 /* jiesuo@2x.png */; };
+		7F766AA4E220D733E630364F0B5EDB04 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8087059898843C8414E4C2D4285F450F /* MGPlayerView+Base.h in Headers */ = {isa = PBXBuildFile; fileRef = 987EAF9BB0B7733D8B77B114790D0040 /* MGPlayerView+Base.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86E9A506D57692BF0916F6821F3DABED /* MGPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = D8051FFCC3575F94A3A2072741AD34E1 /* MGPlayerView.m */; };
+		87D586C1A08BCEC0B2260A39C81DAEDC /* PlayerFullScreenViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 607AE3834B4EBC4DBA256D4748DDB91F /* PlayerFullScreenViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CF4219CE2A8EA77ADCF215F332FBB73 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F81F6DBF7206511E885FEBD2CE14B67 /* PlayerGestureView.h in Headers */ = {isa = PBXBuildFile; fileRef = DDAA9E50F05304EA788CA4E31813FC34 /* PlayerGestureView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		905E51279F5972277AB26FDFE12D0697 /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */; };
+		96C72360C25049F712254A3919D3197E /* FullMaskView.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8EE860441905AB0A32D6F74A688266 /* FullMaskView.m */; };
+		97D08BA730291A0A6B34380EDCEE8E26 /* CNPSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = D5AD3DD8E3369E67C8FADA6363F98E59 /* CNPSlider.m */; };
+		98FFB4A89EE85A3D7F6610822DEAF263 /* quanping@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 8867AF6CD5CEF1A804C56B2B41A92881 /* quanping@3x.png */; };
+		9A73E52ACFD7F472E1CCBD15DCC27826 /* NSString+customTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 424E63BFDED44B3574AEDA5A8EEF7B7E /* NSString+customTime.m */; };
+		9AF998A262DB00FA988F95238A5758FD /* liangdu@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D12FE2B262AC98DBAF095AE54D616FC /* liangdu@2x.png */; };
+		9C6344D0493A419CD0FD5836E140A30E /* brigh@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = FFA6B8319104F8FF16E58C658F6C6C17 /* brigh@2x.png */; };
+		9ED063FD507F1ADC31263817A0E97296 /* PlayerViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = B65E98C66C3DB5321DCF1029B159E020 /* PlayerViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A3DB56922597CBA5D0EC00F6A9051025 /* MGPlayerView-MGPlayerView in Resources */ = {isa = PBXBuildFile; fileRef = 983F2E50F3188DF76A6BB7041F1AEB85 /* MGPlayerView-MGPlayerView */; };
-		A73AB0645DB1DFED71A552F4A7088F82 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A89DCC80C83FF84CA975B525F1246C79 /* PlayerView_prv.h in Headers */ = {isa = PBXBuildFile; fileRef = 070D5E03C106229FBB613D016F04C044 /* PlayerView_prv.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8A4A6C720C95BD8F052961B33E84D56 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AEFF563DA76A5CA2003AE42FFF840D55 /* View+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */; };
-		B1955BEAD2B2046EEB9E7AD9BE91024C /* PlayerFullScreenRotateAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = AF924129A75ADC900F6C66297E19CFE4 /* PlayerFullScreenRotateAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B68DCE4B37AD49F78D2FC670AD069752 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E16028A2C64A3514911B3663A5AD94 /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC50154C67E12FB866460790FF23755A /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BC8346BD215DAF899445FEA0A0CBA7F6 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = B400F0BA3C9F275C392DFEA369B90B5B /* Common.m */; };
-		BCA0B35762FFA3FDC34B1B89B8348E65 /* MASConstraintMaker.h in Headers */ = {isa = PBXBuildFile; fileRef = B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C05929C7DB70F6439083ECE13D21F671 /* MASViewAttribute.h in Headers */ = {isa = PBXBuildFile; fileRef = A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C38788C786E65BCAA26ACF4045EA93CC /* View+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A89DCC80C83FF84CA975B525F1246C79 /* PlayerView_prv.h in Headers */ = {isa = PBXBuildFile; fileRef = FAF4607E4E437BC4FAE6A35AA36A922A /* PlayerView_prv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB042BE3846FAF2D95DDA212B67B30D1 /* bofang@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 99918309A34C4521384A3C60BDF8F3AE /* bofang@3x.png */; };
+		AE7BE85DAA1B15F8A1667A8F5E2C3380 /* liangdu@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = CD6447C21E01E5DDBD9C0F92C9AA6BA7 /* liangdu@3x.png */; };
+		AF2EAC69720F5EEE9FF35FB836ACDB34 /* bofang_s@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 6078707B1D8775B3A947B81A20EA795B /* bofang_s@3x.png */; };
+		B1955BEAD2B2046EEB9E7AD9BE91024C /* PlayerFullScreenRotateAnimator.h in Headers */ = {isa = PBXBuildFile; fileRef = EB6BF5DC9AAAAC0157C142D40F0E80D3 /* PlayerFullScreenRotateAnimator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B33E2554DADB2B59A572BFBCD03D0306 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */; };
+		B4CF14FEBC9F4397F1FD327E32E5650B /* fanhui@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 84C5274E0EB783D9603EDC01CF013B68 /* fanhui@2x.png */; };
+		B68DCE4B37AD49F78D2FC670AD069752 /* Common.h in Headers */ = {isa = PBXBuildFile; fileRef = D87344C9919D93BA045A2B8463E64ADD /* Common.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B70E346373CB3E90ED0336498DDAD018 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B93742AB18FABD96550235043EA62A95 /* ZFPlayer_top_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = B63D00081131444F042CBFC8497BE74C /* ZFPlayer_top_shadow.png */; };
+		BC8346BD215DAF899445FEA0A0CBA7F6 /* Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 95295D36834417FCF506C8BEAEC52FA9 /* Common.m */; };
+		BF1682B88F636AB7C61F6CFBD50E70D0 /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C3FF18FB2767360764789B64197B85D3 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C49BA75474FB2D67CD7FF1C8D80A7A43 /* Pods-MGPlayerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 26502CD94C76B2E8345A0C090DDDCFB0 /* Pods-MGPlayerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C65F0F1F41384EFE0B6A9DA3CB3A1248 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */; };
-		CDC84BEB7F7331FFD9E1AF6F22129307 /* PlayerContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = A84D281ACA5CCB7E9B0C9927926BFF68 /* PlayerContentView.m */; };
-		D3E70BDAD50F4B10E06544C1778C1F13 /* MASLayoutConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */; };
-		DAAF8593575D5403FF234E556982EC96 /* PlayerContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD1564FA3E3673EA72234CC86477C51 /* PlayerContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F047BB75B2E6952BDC13DA986598AC /* ZFPlayer_bottom_shadow.png in Resources */ = {isa = PBXBuildFile; fileRef = 94D27507CD611404B7F45D3AFECEB7AC /* ZFPlayer_bottom_shadow.png */; };
+		CDC84BEB7F7331FFD9E1AF6F22129307 /* PlayerContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = D625A413290F76A2951E5853A90ADEB4 /* PlayerContentView.m */; };
+		D0353CB308A5075C05A5FD32EB61469F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */; };
+		D1B42BC836E46EAA9D3A903A7110C6DA /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D727D5174B211092656C261F3F191959 /* zanting_s@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9E2286CA9FD5EEE29482A7A083134A84 /* zanting_s@2x.png */; };
+		DAAF8593575D5403FF234E556982EC96 /* PlayerContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = A3689CDF038604AB104613820E07ECB8 /* PlayerContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DBEDC99D0AAEBD3C413AC4A875D916EF /* Pods-MGPlayerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F5D3D712A5EA1DB1ED8B037F67BF740 /* Pods-MGPlayerView_Example-dummy.m */; };
-		DED7B5E7385A0C658D253223C81102A7 /* NSString+customTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 29B0646EA4F88BB66E02507DFF31DA8F /* NSString+customTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DED7B5E7385A0C658D253223C81102A7 /* NSString+customTime.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C0C3601E2085BE0F51FA9FD84E04641 /* NSString+customTime.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF158D5CBB0F2DD5E1F11A424BA2B037 /* Masonry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */; };
 		DF80F57ADD02FE2E710D4C0D37DF43D8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */; };
-		EB31AC5CEC0E5488930485CB94869B1F /* MASViewAttribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */; };
-		EF9C302A9F20E67141B8FDB2ACFECF45 /* MGPlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B16EE3533E5F088944AFDCA76A976AC /* MGPlayerView-dummy.m */; };
-		F5A49375DE59064FD19AE02BBAE9B517 /* NSTimer+timerBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B8CC6ECE5CC2A7C2C6C59DFCF0BE2B1 /* NSTimer+timerBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FD095AB4ACEDF25A049D0A3BD6C6A12C /* NSTimer+timerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 73FE84811756BAB03B50D69856C7DE85 /* NSTimer+timerBlock.m */; };
-		FF3F14E732EAF5E8D3E8F0F69DF876EF /* FullMaskLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C58D8E8ECFB3D5BFECC14687BC26FB9 /* FullMaskLockView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9A7849BC4190B67A664DB302C630A02 /* thumbImage@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 20DBCB91C50B20F728BC5E2F242DE058 /* thumbImage@3x.png */; };
+		EB597CAA5791F41977B7A7AAA377391A /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */; };
+		EBD876920275AC27DA6803D0FE10D258 /* suoping@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 95EEBE7458E3000A83EE1BED2A2CED93 /* suoping@2x.png */; };
+		EF9C302A9F20E67141B8FDB2ACFECF45 /* MGPlayerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 268298ADF13A4FD738AAC030BA8A949F /* MGPlayerView-dummy.m */; };
+		F39987B9DD51A1A287E3AB55E3C8637A /* zanting@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A690F2AE6A964625AB5C19A3D386F48 /* zanting@3x.png */; };
+		F5A49375DE59064FD19AE02BBAE9B517 /* NSTimer+timerBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = A79B6F59E3B054F691B1924D41D0953D /* NSTimer+timerBlock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FD095AB4ACEDF25A049D0A3BD6C6A12C /* NSTimer+timerBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = D5861F5F7F6EE87498670496DF95B3D3 /* NSTimer+timerBlock.m */; };
+		FD1B08FC50C271F2E20CE4899512CEF7 /* NSArray+MASShorthandAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FF3F14E732EAF5E8D3E8F0F69DF876EF /* FullMaskLockView.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D9AE8B8556B43466179D5D2422A63F /* FullMaskLockView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		536E3B435D039D133DF1D041E5CFF331 /* PBXContainerItemProxy */ = {
+		120F0EC21F00D3D64C376F5EE1442932 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9A6F9254969AB293E793589B689DF58A;
 			remoteInfo = "MGPlayerView-MGPlayerView";
 		};
-		69FCC8A4241937FFD69B1865E3A149D9 /* PBXContainerItemProxy */ = {
+		2629E180D8FA7DC232C2628BEBFA64AE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
 			remoteInfo = Masonry;
 		};
-		DD5834C7E2527B14DDB2C8583637AC30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = CD9F781A22D8A86CF63DE7FB99ACDA4F;
-			remoteInfo = MGPlayerView;
-		};
-		DDD7E947F96837BE0D1F25C9011E4511 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
-			remoteInfo = Masonry;
-		};
-		E97F2CE5E3124177914EF9BE2B888702 /* PBXContainerItemProxy */ = {
+		8C57D4EE0BF725D618D3AFBD8A004601 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 51D0CF72336F9EAEEBF545246A9631B6;
 			remoteInfo = "Pods-MGPlayerView_Example";
 		};
+		D79FC3623A60797352339383479C7520 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD9F781A22D8A86CF63DE7FB99ACDA4F;
+			remoteInfo = MGPlayerView;
+		};
+		F050EF2EAC0D41081B81908F5928C288 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 55AF53E6C77A10ED4985E04D74A8878E;
+			remoteInfo = Masonry;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0022AF34E5883B0AC7A84B3ACC814BAF /* bofang_s@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bofang_s@2x.png"; path = "MGPlayerView/Assets/Img/bofang_s@2x.png"; sourceTree = "<group>"; };
 		02CA69FDFD4D7BB11F8E3E2E7A0B9879 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
 		047EE388CF208BD5F57049BD98558C94 /* View+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASAdditions.h"; path = "Masonry/View+MASAdditions.h"; sourceTree = "<group>"; };
-		070D5E03C106229FBB613D016F04C044 /* PlayerView_prv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerView_prv.h; path = MGPlayerView/Classes/Protocol/PlayerView_prv.h; sourceTree = "<group>"; };
+		067BEA2F826B20B0EB61E4F0C5771C93 /* fanhui@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fanhui@3x.png"; path = "MGPlayerView/Assets/Img/fanhui@3x.png"; sourceTree = "<group>"; };
 		071EEE0A3CE36E163E09EA7F7915F1DE /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
-		0BE3FCDAD089B8ABA245ECFAE52B75E2 /* FullMaskView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FullMaskView.h; path = MGPlayerView/Classes/MaskView/FullMaskView.h; sourceTree = "<group>"; };
-		0D0506E27BB7F5F8E53B1B28350AC0F4 /* CNPSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CNPSlider.m; path = MGPlayerView/Classes/MaskView/CNPSlider.m; sourceTree = "<group>"; };
-		13C717E661DFCC00506C7CA8BF5D13F9 /* SmallMaskView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmallMaskView.h; path = MGPlayerView/Classes/MaskView/SmallMaskView.h; sourceTree = "<group>"; };
+		08AF31E61342E73BB70F2FAEF24C0EF4 /* BrightnessView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BrightnessView.h; path = MGPlayerView/Classes/GestureView/BrightnessView.h; sourceTree = "<group>"; };
+		09D5A40E74D9F27A96174B6147F33284 /* PlayerViewCallbackProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerViewCallbackProtocol.h; path = MGPlayerView/Classes/Protocol/PlayerViewCallbackProtocol.h; sourceTree = "<group>"; };
+		0A690F2AE6A964625AB5C19A3D386F48 /* zanting@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zanting@3x.png"; path = "MGPlayerView/Assets/Img/zanting@3x.png"; sourceTree = "<group>"; };
+		0AB014C935B8E3CD30AFCB6DA11850FA /* MGPlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGPlayerView-prefix.pch"; sourceTree = "<group>"; };
+		0B38E5BF3D17EB6B0F963E434BE1EF9D /* PlayerFullScreenViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerFullScreenViewController.m; path = MGPlayerView/Classes/Main/PlayerFullScreenViewController.m; sourceTree = "<group>"; };
+		0CFD6FF1C1EFB8B5D3907ED1D5BAFAB5 /* suoping@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "suoping@3x.png"; path = "MGPlayerView/Assets/Img/suoping@3x.png"; sourceTree = "<group>"; };
+		16D44BF19398A7951D3F5DC5BF61F547 /* jiesuo@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jiesuo@3x.png"; path = "MGPlayerView/Assets/Img/jiesuo@3x.png"; sourceTree = "<group>"; };
 		16F139CF48482CCD5861619A64976445 /* Pods-MGPlayerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MGPlayerView_Example-umbrella.h"; sourceTree = "<group>"; };
-		1FBEA746743428F72399B1FA7E79DBAF /* MGPlayerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MGPlayerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		1FF5ED200A9F16208CA6E9142A600914 /* MGPlayerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGPlayerView.release.xcconfig; sourceTree = "<group>"; };
+		1A076F362E1B20A3E4217FC33D09FE51 /* PlayerFullScreenRotateAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerFullScreenRotateAnimator.m; path = MGPlayerView/Classes/Main/PlayerFullScreenRotateAnimator.m; sourceTree = "<group>"; };
+		1C77990C4D26DB56577C8FB9E0A03A8E /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		1D12FE2B262AC98DBAF095AE54D616FC /* liangdu@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "liangdu@2x.png"; path = "MGPlayerView/Assets/Img/liangdu@2x.png"; sourceTree = "<group>"; };
 		1FFED36A657123030ABB700256D73F15 /* Masonry */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		20DBCB91C50B20F728BC5E2F242DE058 /* thumbImage@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumbImage@3x.png"; path = "MGPlayerView/Assets/Img/thumbImage@3x.png"; sourceTree = "<group>"; };
 		26502CD94C76B2E8345A0C090DDDCFB0 /* Pods-MGPlayerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MGPlayerView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		268298ADF13A4FD738AAC030BA8A949F /* MGPlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGPlayerView-dummy.m"; sourceTree = "<group>"; };
 		27E12E3D2779B5C7A8301A94F715DB4C /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
-		29B0646EA4F88BB66E02507DFF31DA8F /* NSString+customTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+customTime.h"; path = "MGPlayerView/Classes/Category/NSString+customTime.h"; sourceTree = "<group>"; };
-		2C58D8E8ECFB3D5BFECC14687BC26FB9 /* FullMaskLockView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FullMaskLockView.h; path = MGPlayerView/Classes/MaskView/FullMaskLockView.h; sourceTree = "<group>"; };
+		2E82CDB2FA5215BCF6918C154CFD9D1B /* FullMaskView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FullMaskView.h; path = MGPlayerView/Classes/MaskView/FullMaskView.h; sourceTree = "<group>"; };
+		2EBFD80A1F5189347CDDF2F60CC000FA /* zanting_s@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zanting_s@3x.png"; path = "MGPlayerView/Assets/Img/zanting_s@3x.png"; sourceTree = "<group>"; };
 		30EC6C5D191587619B42076546EDC448 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
-		315EE52CBE0B76FAD5FA3DDD27E29A28 /* MGPlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGPlayerView.modulemap; sourceTree = "<group>"; };
 		342C4D9B5E1E36390E7AF01E35444998 /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		367BCECEF0B7960ADAF3CF318CD8F49C /* NSString+customTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+customTime.m"; path = "MGPlayerView/Classes/Category/NSString+customTime.m"; sourceTree = "<group>"; };
 		384F30EE0E6C03332C61891D2BCCC901 /* Pods-MGPlayerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGPlayerView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3D8D982F014BA1407DB67AE64280D47A /* Pods-MGPlayerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGPlayerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E537C1F47DA8B06DA4A71E3D14F4DE4 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
-		45DB223B4C2EA51FE448CACC1A126948 /* BrightnessView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BrightnessView.m; path = MGPlayerView/Classes/GestureView/BrightnessView.m; sourceTree = "<group>"; };
+		424E63BFDED44B3574AEDA5A8EEF7B7E /* NSString+customTime.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+customTime.m"; path = "MGPlayerView/Classes/Category/NSString+customTime.m"; sourceTree = "<group>"; };
 		46A2FD0CFDF294CAE0276013DC5A16DD /* Pods-MGPlayerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGPlayerView_Tests-Info.plist"; sourceTree = "<group>"; };
 		470C5CD1265270E95A8A89443C727427 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
-		49E3C9E00F33E0404B2EC346036D51AE /* MGPlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGPlayerView-Info.plist"; sourceTree = "<group>"; };
+		47C4F5E585B1C91E05D293273363C4A2 /* quanping@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "quanping@2x.png"; path = "MGPlayerView/Assets/Img/quanping@2x.png"; sourceTree = "<group>"; };
+		47D9AE8B8556B43466179D5D2422A63F /* FullMaskLockView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FullMaskLockView.h; path = MGPlayerView/Classes/MaskView/FullMaskLockView.h; sourceTree = "<group>"; };
 		4AD89987EC7EAE20D7034EEF9935E7CC /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
+		4BAB8D4988FE3044EE67976FA1E4C9BE /* MGPlayerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGPlayerView.release.xcconfig; sourceTree = "<group>"; };
+		4DEA1810EF046B874946BE7CAEBFA65B /* brigh@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "brigh@3x.png"; path = "MGPlayerView/Assets/Img/brigh@3x.png"; sourceTree = "<group>"; };
 		4E2AC98ADBF1042DB4B24EB7CA19D94A /* Pods-MGPlayerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGPlayerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		50838F1833E456065A0F7886FA7E6543 /* Pods-MGPlayerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGPlayerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		55960467D1B758EC688A18A171012E78 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		5BA0220EDE79D571FDA17EF8665C7076 /* PlayerViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerViewProtocol.h; path = MGPlayerView/Classes/Protocol/PlayerViewProtocol.h; sourceTree = "<group>"; };
+		56CD8CD0DE7C8993409A5C73E05DD356 /* SmallMaskView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SmallMaskView.h; path = MGPlayerView/Classes/MaskView/SmallMaskView.h; sourceTree = "<group>"; };
+		59334F6A32F5FB5136468FD2AE580236 /* MGPlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGPlayerView-umbrella.h"; sourceTree = "<group>"; };
+		5C8D87629E5E19F1DB7E3CB951EB6EEF /* MGPlayerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGPlayerView.debug.xcconfig; sourceTree = "<group>"; };
 		5DFF88A9F9004B06A2F4DA13372C0923 /* Pods-MGPlayerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MGPlayerView_Example-frameworks.sh"; sourceTree = "<group>"; };
-		6058F278ACCDE00243F9B0D9B0ED2838 /* MGPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGPlayerView.m; path = MGPlayerView/Classes/Main/MGPlayerView.m; sourceTree = "<group>"; };
+		6078707B1D8775B3A947B81A20EA795B /* bofang_s@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bofang_s@3x.png"; path = "MGPlayerView/Assets/Img/bofang_s@3x.png"; sourceTree = "<group>"; };
 		607937A372913475EE7EAE532760ACD4 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
-		68848E2CA9EA5E21E262D7EFA6115DAE /* PlayerFullScreenRotateAnimator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerFullScreenRotateAnimator.m; path = MGPlayerView/Classes/Main/PlayerFullScreenRotateAnimator.m; sourceTree = "<group>"; };
+		607AE3834B4EBC4DBA256D4748DDB91F /* PlayerFullScreenViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerFullScreenViewController.h; path = MGPlayerView/Classes/Main/PlayerFullScreenViewController.h; sourceTree = "<group>"; };
+		6422D0ACE0DD5A2CAFF4C785C03558F8 /* MGPlayerView+Property.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGPlayerView+Property.h"; path = "MGPlayerView/Classes/Main/MGPlayerView+Property.h"; sourceTree = "<group>"; };
 		69F71FEBD9E0F5677063296F955DFFAE /* Pods-MGPlayerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MGPlayerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6CF8069504999FB8BF5FA1529175AA74 /* Masonry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-umbrella.h"; sourceTree = "<group>"; };
+		6D6BB550273987D525C092879AFC10F9 /* thumbImage_h@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumbImage_h@2x.png"; path = "MGPlayerView/Assets/Img/thumbImage_h@2x.png"; sourceTree = "<group>"; };
 		6E17443EA85E103F4DD0553AB6BB942A /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		6FF4AF21902029EC43C354AC0978CE49 /* MASLayoutConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASLayoutConstraint.h; path = Masonry/MASLayoutConstraint.h; sourceTree = "<group>"; };
 		72A95F8027E3EB86CB9AE2D7539201FE /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
-		72B0576C2E81D8D898C46DD40AB72096 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
-		736C011BE5648827744F7395841E3372 /* PlayerViewCallbackProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerViewCallbackProtocol.h; path = MGPlayerView/Classes/Protocol/PlayerViewCallbackProtocol.h; sourceTree = "<group>"; };
-		73FE84811756BAB03B50D69856C7DE85 /* NSTimer+timerBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+timerBlock.m"; path = "MGPlayerView/Classes/Category/NSTimer+timerBlock.m"; sourceTree = "<group>"; };
-		750B60F4900A4F5DB290E061DD2BA97F /* BrightnessView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BrightnessView.h; path = MGPlayerView/Classes/GestureView/BrightnessView.h; sourceTree = "<group>"; };
-		82DDEC7E25C989507A9E7322F9CF75E7 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		8373E94E3860D55DECC914091F293B76 /* Pods-MGPlayerView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MGPlayerView_Example"; path = Pods_MGPlayerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		837834476F3329FA118B081516D4FC28 /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		8434438671E4671D8365B3643A4CFD17 /* MGPlayerView+Base.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MGPlayerView+Base.m"; path = "MGPlayerView/Classes/Main/MGPlayerView+Base.m"; sourceTree = "<group>"; };
+		84C5274E0EB783D9603EDC01CF013B68 /* fanhui@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "fanhui@2x.png"; path = "MGPlayerView/Assets/Img/fanhui@2x.png"; sourceTree = "<group>"; };
+		857028AB26A3F8967AA1841E4D32D118 /* zanting@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zanting@2x.png"; path = "MGPlayerView/Assets/Img/zanting@2x.png"; sourceTree = "<group>"; };
 		86765B456E483806C4E13D2DD50E40A4 /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
+		8867AF6CD5CEF1A804C56B2B41A92881 /* quanping@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "quanping@3x.png"; path = "MGPlayerView/Assets/Img/quanping@3x.png"; sourceTree = "<group>"; };
 		89647D0D62B3E55E3D5860DCDDDAAA55 /* Pods-MGPlayerView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-MGPlayerView_Tests"; path = Pods_MGPlayerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8A1FFD1EC823E266557060D92058625C /* PlayerFullScreenViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerFullScreenViewController.h; path = MGPlayerView/Classes/Main/PlayerFullScreenViewController.h; sourceTree = "<group>"; };
 		8AEEBD88282BA13360CAA867D8465C75 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
-		8B16EE3533E5F088944AFDCA76A976AC /* MGPlayerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MGPlayerView-dummy.m"; sourceTree = "<group>"; };
 		8B46CF89C5FEA1E337100A940C15DB77 /* Pods-MGPlayerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MGPlayerView_Tests.modulemap"; sourceTree = "<group>"; };
 		8F5D3D712A5EA1DB1ED8B037F67BF740 /* Pods-MGPlayerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MGPlayerView_Example-dummy.m"; sourceTree = "<group>"; };
 		9073C3B74BC30C55B4EB5B2A596EAD72 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
+		91D89475AB4CFC92D8806104436DDD71 /* MGPlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "MGPlayerView-Info.plist"; sourceTree = "<group>"; };
+		92856D64FE1F0ABC60C3AAF24F534E89 /* PlayerGestureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerGestureView.m; path = MGPlayerView/Classes/GestureView/PlayerGestureView.m; sourceTree = "<group>"; };
 		938602C17642951EE1D13F026E824690 /* Pods-MGPlayerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGPlayerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		94D27507CD611404B7F45D3AFECEB7AC /* ZFPlayer_bottom_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ZFPlayer_bottom_shadow.png; path = MGPlayerView/Assets/Img/ZFPlayer_bottom_shadow.png; sourceTree = "<group>"; };
+		95295D36834417FCF506C8BEAEC52FA9 /* Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = MGPlayerView/Classes/Main/Common.m; sourceTree = "<group>"; };
+		95EEBE7458E3000A83EE1BED2A2CED93 /* suoping@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "suoping@2x.png"; path = "MGPlayerView/Assets/Img/suoping@2x.png"; sourceTree = "<group>"; };
 		983F2E50F3188DF76A6BB7041F1AEB85 /* MGPlayerView-MGPlayerView */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "MGPlayerView-MGPlayerView"; path = MGPlayerView.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		987EAF9BB0B7733D8B77B114790D0040 /* MGPlayerView+Base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGPlayerView+Base.h"; path = "MGPlayerView/Classes/Main/MGPlayerView+Base.h"; sourceTree = "<group>"; };
 		99057C6E1CE092E53FB8C2057B330B7D /* Pods-MGPlayerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MGPlayerView_Example-Info.plist"; sourceTree = "<group>"; };
-		99E16028A2C64A3514911B3663A5AD94 /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = MGPlayerView/Classes/Main/Common.h; sourceTree = "<group>"; };
+		99918309A34C4521384A3C60BDF8F3AE /* bofang@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bofang@3x.png"; path = "MGPlayerView/Assets/Img/bofang@3x.png"; sourceTree = "<group>"; };
 		9AB6893D0C651C71356A24472C8B8A1E /* Pods-MGPlayerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MGPlayerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		9AED05BEB268926BD2929995EB538A52 /* MGPlayerView+Base.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGPlayerView+Base.h"; path = "MGPlayerView/Classes/Main/MGPlayerView+Base.h"; sourceTree = "<group>"; };
-		9B8CC6ECE5CC2A7C2C6C59DFCF0BE2B1 /* NSTimer+timerBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+timerBlock.h"; path = "MGPlayerView/Classes/Category/NSTimer+timerBlock.h"; sourceTree = "<group>"; };
+		9C0C3601E2085BE0F51FA9FD84E04641 /* NSString+customTime.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+customTime.h"; path = "MGPlayerView/Classes/Category/NSString+customTime.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9E2286CA9FD5EEE29482A7A083134A84 /* zanting_s@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "zanting_s@2x.png"; path = "MGPlayerView/Assets/Img/zanting_s@2x.png"; sourceTree = "<group>"; };
+		A1251ACECD1FED3E3874CF2DCEAC6BBA /* MGPlayerView+Base.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "MGPlayerView+Base.m"; path = "MGPlayerView/Classes/Main/MGPlayerView+Base.m"; sourceTree = "<group>"; };
+		A35C0FB3B1A18A3F4ABA9D55DAC7D22A /* MGPlayerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MGPlayerView.modulemap; sourceTree = "<group>"; };
+		A3689CDF038604AB104613820E07ECB8 /* PlayerContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerContentView.h; path = MGPlayerView/Classes/ContentView/PlayerContentView.h; sourceTree = "<group>"; };
+		A58DCC168CD5ED82688A3EC94FD2B430 /* jiesuo@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "jiesuo@2x.png"; path = "MGPlayerView/Assets/Img/jiesuo@2x.png"; sourceTree = "<group>"; };
 		A78D3443F105E00FC21FE5A357C8F716 /* MASViewAttribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewAttribute.h; path = Masonry/MASViewAttribute.h; sourceTree = "<group>"; };
-		A84D281ACA5CCB7E9B0C9927926BFF68 /* PlayerContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerContentView.m; path = MGPlayerView/Classes/ContentView/PlayerContentView.m; sourceTree = "<group>"; };
+		A79B6F59E3B054F691B1924D41D0953D /* NSTimer+timerBlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+timerBlock.h"; path = "MGPlayerView/Classes/Category/NSTimer+timerBlock.h"; sourceTree = "<group>"; };
 		A85AE9E36F67A1B513CB8DA940771B4F /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
 		A8BCCE8C6C17F326AFEDF4357C62ADAF /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		AB9CDDA01EC60A6AD09CDAEBE733F0DF /* Pods-MGPlayerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MGPlayerView_Example.modulemap"; sourceTree = "<group>"; };
-		ABD1564FA3E3673EA72234CC86477C51 /* PlayerContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerContentView.h; path = MGPlayerView/Classes/ContentView/PlayerContentView.h; sourceTree = "<group>"; };
+		AEEF4571552E311A8E1931E4184A6BD8 /* MGPlayerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = MGPlayerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		AF4497913DB548AE2E03103D3A97F34F /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
-		AF924129A75ADC900F6C66297E19CFE4 /* PlayerFullScreenRotateAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerFullScreenRotateAnimator.h; path = MGPlayerView/Classes/Main/PlayerFullScreenRotateAnimator.h; sourceTree = "<group>"; };
-		AFEDE0880BDD37D450BB4D7E2A5A929E /* FullMaskView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FullMaskView.m; path = MGPlayerView/Classes/MaskView/FullMaskView.m; sourceTree = "<group>"; };
 		B28EC2F4C626ED77509645BE3805CB29 /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		B400F0BA3C9F275C392DFEA369B90B5B /* Common.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Common.m; path = MGPlayerView/Classes/Main/Common.m; sourceTree = "<group>"; };
+		B63D00081131444F042CBFC8497BE74C /* ZFPlayer_top_shadow.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = ZFPlayer_top_shadow.png; path = MGPlayerView/Assets/Img/ZFPlayer_top_shadow.png; sourceTree = "<group>"; };
+		B65E98C66C3DB5321DCF1029B159E020 /* PlayerViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerViewProtocol.h; path = MGPlayerView/Classes/Protocol/PlayerViewProtocol.h; sourceTree = "<group>"; };
+		B944B12AF84A4569E528C935CACE15BE /* FullMaskLockView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FullMaskLockView.m; path = MGPlayerView/Classes/MaskView/FullMaskLockView.m; sourceTree = "<group>"; };
 		BAD9EE3C83DFF434A698FD50A93AE1EE /* Pods-MGPlayerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MGPlayerView_Tests-dummy.m"; sourceTree = "<group>"; };
 		BDB676D9D5D3AFD89D8DDCE3369D4BAC /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
-		C6F9133B69459DEF7C766EE24C2FEF95 /* MGPlayerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGPlayerView-umbrella.h"; sourceTree = "<group>"; };
-		CA3CEB5BEE9FA4980C36C79BAD214126 /* ResourceBundle-MGPlayerView-MGPlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MGPlayerView-MGPlayerView-Info.plist"; sourceTree = "<group>"; };
+		C867E3C8372DC6585061FE02CE44E547 /* MGPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGPlayerView.h; path = MGPlayerView/Classes/Main/MGPlayerView.h; sourceTree = "<group>"; };
+		CD6447C21E01E5DDBD9C0F92C9AA6BA7 /* liangdu@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "liangdu@3x.png"; path = "MGPlayerView/Assets/Img/liangdu@3x.png"; sourceTree = "<group>"; };
+		D0A13C2C14FA3469CDC07F3F1A00E943 /* thumbImage@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumbImage@2x.png"; path = "MGPlayerView/Assets/Img/thumbImage@2x.png"; sourceTree = "<group>"; };
 		D12E9F350C1C8076BE92719B89951AD8 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
 		D245E0514AAC1A2B9A6D5EA2F383E90F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D90273E7B7DB8F4B0AB74FDFFDD65A30 /* MGPlayerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MGPlayerView.h; path = MGPlayerView/Classes/Main/MGPlayerView.h; sourceTree = "<group>"; };
+		D5861F5F7F6EE87498670496DF95B3D3 /* NSTimer+timerBlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSTimer+timerBlock.m"; path = "MGPlayerView/Classes/Category/NSTimer+timerBlock.m"; sourceTree = "<group>"; };
+		D5AD3DD8E3369E67C8FADA6363F98E59 /* CNPSlider.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CNPSlider.m; path = MGPlayerView/Classes/MaskView/CNPSlider.m; sourceTree = "<group>"; };
+		D625A413290F76A2951E5853A90ADEB4 /* PlayerContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerContentView.m; path = MGPlayerView/Classes/ContentView/PlayerContentView.m; sourceTree = "<group>"; };
+		D8051FFCC3575F94A3A2072741AD34E1 /* MGPlayerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MGPlayerView.m; path = MGPlayerView/Classes/Main/MGPlayerView.m; sourceTree = "<group>"; };
+		D87344C9919D93BA045A2B8463E64ADD /* Common.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Common.h; path = MGPlayerView/Classes/Main/Common.h; sourceTree = "<group>"; };
+		D8C5DB3A0BBA2183CECA57A750136272 /* BrightnessView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BrightnessView.m; path = MGPlayerView/Classes/GestureView/BrightnessView.m; sourceTree = "<group>"; };
 		DA94567F5D0523506CE89BC772161B3F /* MGPlayerView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MGPlayerView; path = MGPlayerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA960B973F1BD8FD30AFF8693975472E /* PlayerGestureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerGestureView.h; path = MGPlayerView/Classes/GestureView/PlayerGestureView.h; sourceTree = "<group>"; };
-		DED900E54CB6154443950DC3009C5251 /* CNPSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNPSlider.h; path = MGPlayerView/Classes/MaskView/CNPSlider.h; sourceTree = "<group>"; };
-		DF0D9A58FC9057B068CE02235B00D65B /* SmallMaskView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmallMaskView.m; path = MGPlayerView/Classes/MaskView/SmallMaskView.m; sourceTree = "<group>"; };
+		DDAA9E50F05304EA788CA4E31813FC34 /* PlayerGestureView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerGestureView.h; path = MGPlayerView/Classes/GestureView/PlayerGestureView.h; sourceTree = "<group>"; };
+		DF2EA5CC590A43EC07983097948F1ED2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DF8EE860441905AB0A32D6F74A688266 /* FullMaskView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FullMaskView.m; path = MGPlayerView/Classes/MaskView/FullMaskView.m; sourceTree = "<group>"; };
 		DFA1012B6A8BD076CD9F09831AE37A01 /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
-		E0163A677304DD7F6519BD114013F355 /* MGPlayerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MGPlayerView.debug.xcconfig; sourceTree = "<group>"; };
-		E146884DECE44997B9BD232FFCC4A3A0 /* MGPlayerView+Property.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MGPlayerView+Property.h"; path = "MGPlayerView/Classes/Main/MGPlayerView+Property.h"; sourceTree = "<group>"; };
-		E36EC177325A4294153A87D7F9AD6B9C /* Assets.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = MGPlayerView/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		E44E0D3B3B6EF4E6FC359065AF00B023 /* ResourceBundle-MGPlayerView-MGPlayerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-MGPlayerView-MGPlayerView-Info.plist"; sourceTree = "<group>"; };
 		E7851906D7976272A721C8C4E0CE9092 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
+		E9BD4973FF7821B26153691CAA13E9CE /* thumbImage_h@3x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "thumbImage_h@3x.png"; path = "MGPlayerView/Assets/Img/thumbImage_h@3x.png"; sourceTree = "<group>"; };
 		EAB6F611E86A4758835A715E4B4184F6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		EADA3F411634E7F9EC2D5538D671B6C4 /* MGPlayerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MGPlayerView-prefix.pch"; sourceTree = "<group>"; };
+		EB6BF5DC9AAAAC0157C142D40F0E80D3 /* PlayerFullScreenRotateAnimator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerFullScreenRotateAnimator.h; path = MGPlayerView/Classes/Main/PlayerFullScreenRotateAnimator.h; sourceTree = "<group>"; };
+		EB77657E0D917AAD70D16E568991910A /* bofang@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "bofang@2x.png"; path = "MGPlayerView/Assets/Img/bofang@2x.png"; sourceTree = "<group>"; };
 		EB7CC7527FD599A1064055C060E14B43 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		EDA8A3885BC33F25CB32442EB2449111 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
-		EF60476559BB0E85B916FC59690A0CB0 /* PlayerGestureView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerGestureView.m; path = MGPlayerView/Classes/GestureView/PlayerGestureView.m; sourceTree = "<group>"; };
+		F080FC6720C74B4E78BF150080A6E119 /* SmallMaskView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SmallMaskView.m; path = MGPlayerView/Classes/MaskView/SmallMaskView.m; sourceTree = "<group>"; };
 		F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
-		F4105944848457ED2CA360D01674AE7A /* FullMaskLockView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FullMaskLockView.m; path = MGPlayerView/Classes/MaskView/FullMaskLockView.m; sourceTree = "<group>"; };
-		FC1549A7BD023ED0561EBD974193B2BF /* PlayerFullScreenViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = PlayerFullScreenViewController.m; path = MGPlayerView/Classes/Main/PlayerFullScreenViewController.m; sourceTree = "<group>"; };
+		F809246A8CA8E47F947A2C6DAE549D23 /* CNPSlider.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = CNPSlider.h; path = MGPlayerView/Classes/MaskView/CNPSlider.h; sourceTree = "<group>"; };
+		FAF4607E4E437BC4FAE6A35AA36A922A /* PlayerView_prv.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = PlayerView_prv.h; path = MGPlayerView/Classes/Protocol/PlayerView_prv.h; sourceTree = "<group>"; };
 		FE5B7E54952511981293FA086034503C /* Pods-MGPlayerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MGPlayerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FFA6B8319104F8FF16E58C658F6C6C17 /* brigh@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "brigh@2x.png"; path = "MGPlayerView/Assets/Img/brigh@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		1A82E5B73EC09331A78EC88310037516 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32E6007F5B71B3A4E7F198A79026F843 /* Foundation.framework in Frameworks */,
+				786A94C6053DE18A33558BE7A3FDAF1D /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		26A44EF125A10399C69C7E5F54250D52 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -240,15 +299,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		64DE3E5A493FDE5F464B0A858C36BC29 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1898E8416B7941E43EC746957AA5F03E /* Foundation.framework in Frameworks */,
-				4CDB09D01DE4DB12AA6FDF288513BCDD /* UIKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8203C13C06F2BB246525F198890F2D82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,7 +307,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EFDAB43B9DA5CE5E787569414D9B6DCC /* Frameworks */ = {
+		B0489CEDC0A84709E213072AECEEF08E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -318,15 +368,76 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3D518A8B4CD2591C69BDFBB6EFCDF819 /* GestureView */ = {
+		301A2B5C7D295E628631287E101F343A /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				750B60F4900A4F5DB290E061DD2BA97F /* BrightnessView.h */,
-				45DB223B4C2EA51FE448CACC1A126948 /* BrightnessView.m */,
-				DA960B973F1BD8FD30AFF8693975472E /* PlayerGestureView.h */,
-				EF60476559BB0E85B916FC59690A0CB0 /* PlayerGestureView.m */,
+				1C77990C4D26DB56577C8FB9E0A03A8E /* LICENSE */,
+				AEEF4571552E311A8E1931E4184A6BD8 /* MGPlayerView.podspec */,
+				DF2EA5CC590A43EC07983097948F1ED2 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		53C70FE515DA6835DEAE9A3C80590AE8 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				A3689CDF038604AB104613820E07ECB8 /* PlayerContentView.h */,
+				D625A413290F76A2951E5853A90ADEB4 /* PlayerContentView.m */,
+			);
+			name = ContentView;
+			sourceTree = "<group>";
+		};
+		55D6C95C727A036BE574DCCEBE9C53DA /* GestureView */ = {
+			isa = PBXGroup;
+			children = (
+				08AF31E61342E73BB70F2FAEF24C0EF4 /* BrightnessView.h */,
+				D8C5DB3A0BBA2183CECA57A750136272 /* BrightnessView.m */,
+				DDAA9E50F05304EA788CA4E31813FC34 /* PlayerGestureView.h */,
+				92856D64FE1F0ABC60C3AAF24F534E89 /* PlayerGestureView.m */,
 			);
 			name = GestureView;
+			sourceTree = "<group>";
+		};
+		56E869670044A5AEB538393A775FCF59 /* MGPlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				EB77657E0D917AAD70D16E568991910A /* bofang@2x.png */,
+				99918309A34C4521384A3C60BDF8F3AE /* bofang@3x.png */,
+				0022AF34E5883B0AC7A84B3ACC814BAF /* bofang_s@2x.png */,
+				6078707B1D8775B3A947B81A20EA795B /* bofang_s@3x.png */,
+				FFA6B8319104F8FF16E58C658F6C6C17 /* brigh@2x.png */,
+				4DEA1810EF046B874946BE7CAEBFA65B /* brigh@3x.png */,
+				84C5274E0EB783D9603EDC01CF013B68 /* fanhui@2x.png */,
+				067BEA2F826B20B0EB61E4F0C5771C93 /* fanhui@3x.png */,
+				A58DCC168CD5ED82688A3EC94FD2B430 /* jiesuo@2x.png */,
+				16D44BF19398A7951D3F5DC5BF61F547 /* jiesuo@3x.png */,
+				1D12FE2B262AC98DBAF095AE54D616FC /* liangdu@2x.png */,
+				CD6447C21E01E5DDBD9C0F92C9AA6BA7 /* liangdu@3x.png */,
+				47C4F5E585B1C91E05D293273363C4A2 /* quanping@2x.png */,
+				8867AF6CD5CEF1A804C56B2B41A92881 /* quanping@3x.png */,
+				95EEBE7458E3000A83EE1BED2A2CED93 /* suoping@2x.png */,
+				0CFD6FF1C1EFB8B5D3907ED1D5BAFAB5 /* suoping@3x.png */,
+				D0A13C2C14FA3469CDC07F3F1A00E943 /* thumbImage@2x.png */,
+				20DBCB91C50B20F728BC5E2F242DE058 /* thumbImage@3x.png */,
+				6D6BB550273987D525C092879AFC10F9 /* thumbImage_h@2x.png */,
+				E9BD4973FF7821B26153691CAA13E9CE /* thumbImage_h@3x.png */,
+				857028AB26A3F8967AA1841E4D32D118 /* zanting@2x.png */,
+				0A690F2AE6A964625AB5C19A3D386F48 /* zanting@3x.png */,
+				9E2286CA9FD5EEE29482A7A083134A84 /* zanting_s@2x.png */,
+				2EBFD80A1F5189347CDDF2F60CC000FA /* zanting_s@3x.png */,
+				94D27507CD611404B7F45D3AFECEB7AC /* ZFPlayer_bottom_shadow.png */,
+				B63D00081131444F042CBFC8497BE74C /* ZFPlayer_top_shadow.png */,
+				B477A752D7951C7BA2D801E1DD7AA380 /* Category */,
+				53C70FE515DA6835DEAE9A3C80590AE8 /* ContentView */,
+				55D6C95C727A036BE574DCCEBE9C53DA /* GestureView */,
+				D43E140E52D8D5E83160CABE02125880 /* Main */,
+				6652A608C7B7C71EC7997DBE2F94E17C /* MaskView */,
+				301A2B5C7D295E628631287E101F343A /* Pod */,
+				998C39EBF87A9F19D0916295F9EFD5FA /* Protocol */,
+				84F98232FF8DCA9B3EFB66F670BC59AD /* Support Files */,
+			);
+			name = MGPlayerView;
+			path = ../..;
 			sourceTree = "<group>";
 		};
 		59DA5C1F72E1D5BABC43EACBA672C3BA /* iOS */ = {
@@ -338,23 +449,19 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		694A388B58DEFF0189464E5EBD6720BC /* Development Pods */ = {
+		6652A608C7B7C71EC7997DBE2F94E17C /* MaskView */ = {
 			isa = PBXGroup;
 			children = (
-				B2376EC2446C5A23C1E80B12E326CB21 /* MGPlayerView */,
+				F809246A8CA8E47F947A2C6DAE549D23 /* CNPSlider.h */,
+				D5AD3DD8E3369E67C8FADA6363F98E59 /* CNPSlider.m */,
+				47D9AE8B8556B43466179D5D2422A63F /* FullMaskLockView.h */,
+				B944B12AF84A4569E528C935CACE15BE /* FullMaskLockView.m */,
+				2E82CDB2FA5215BCF6918C154CFD9D1B /* FullMaskView.h */,
+				DF8EE860441905AB0A32D6F74A688266 /* FullMaskView.m */,
+				56CD8CD0DE7C8993409A5C73E05DD356 /* SmallMaskView.h */,
+				F080FC6720C74B4E78BF150080A6E119 /* SmallMaskView.m */,
 			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		6FB010F81CA46B7308E4D0250CAA2BC7 /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				29B0646EA4F88BB66E02507DFF31DA8F /* NSString+customTime.h */,
-				367BCECEF0B7960ADAF3CF318CD8F49C /* NSString+customTime.m */,
-				9B8CC6ECE5CC2A7C2C6C59DFCF0BE2B1 /* NSTimer+timerBlock.h */,
-				73FE84811756BAB03B50D69856C7DE85 /* NSTimer+timerBlock.m */,
-			);
-			name = Category;
+			name = MaskView;
 			sourceTree = "<group>";
 		};
 		7529FD53BCE26816CCD46658378AAF1B /* Pods */ = {
@@ -381,37 +488,6 @@
 			path = "Target Support Files/Pods-MGPlayerView_Tests";
 			sourceTree = "<group>";
 		};
-		800EC22001B19B89D0F85207698D65DE /* MaskView */ = {
-			isa = PBXGroup;
-			children = (
-				DED900E54CB6154443950DC3009C5251 /* CNPSlider.h */,
-				0D0506E27BB7F5F8E53B1B28350AC0F4 /* CNPSlider.m */,
-				2C58D8E8ECFB3D5BFECC14687BC26FB9 /* FullMaskLockView.h */,
-				F4105944848457ED2CA360D01674AE7A /* FullMaskLockView.m */,
-				0BE3FCDAD089B8ABA245ECFAE52B75E2 /* FullMaskView.h */,
-				AFEDE0880BDD37D450BB4D7E2A5A929E /* FullMaskView.m */,
-				13C717E661DFCC00506C7CA8BF5D13F9 /* SmallMaskView.h */,
-				DF0D9A58FC9057B068CE02235B00D65B /* SmallMaskView.m */,
-			);
-			name = MaskView;
-			sourceTree = "<group>";
-		};
-		80B04A50FA32D5F0436C0B67811654B3 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				315EE52CBE0B76FAD5FA3DDD27E29A28 /* MGPlayerView.modulemap */,
-				8B16EE3533E5F088944AFDCA76A976AC /* MGPlayerView-dummy.m */,
-				49E3C9E00F33E0404B2EC346036D51AE /* MGPlayerView-Info.plist */,
-				EADA3F411634E7F9EC2D5538D671B6C4 /* MGPlayerView-prefix.pch */,
-				C6F9133B69459DEF7C766EE24C2FEF95 /* MGPlayerView-umbrella.h */,
-				E0163A677304DD7F6519BD114013F355 /* MGPlayerView.debug.xcconfig */,
-				1FF5ED200A9F16208CA6E9142A600914 /* MGPlayerView.release.xcconfig */,
-				CA3CEB5BEE9FA4980C36C79BAD214126 /* ResourceBundle-MGPlayerView-MGPlayerView-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/MGPlayerView";
-			sourceTree = "<group>";
-		};
 		8165C58D388F21734CFC36BCA6EB1727 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -424,58 +500,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		855E5D7E1B1F9BED1866732211095FD8 /* ContentView */ = {
+		84F98232FF8DCA9B3EFB66F670BC59AD /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				ABD1564FA3E3673EA72234CC86477C51 /* PlayerContentView.h */,
-				A84D281ACA5CCB7E9B0C9927926BFF68 /* PlayerContentView.m */,
+				A35C0FB3B1A18A3F4ABA9D55DAC7D22A /* MGPlayerView.modulemap */,
+				268298ADF13A4FD738AAC030BA8A949F /* MGPlayerView-dummy.m */,
+				91D89475AB4CFC92D8806104436DDD71 /* MGPlayerView-Info.plist */,
+				0AB014C935B8E3CD30AFCB6DA11850FA /* MGPlayerView-prefix.pch */,
+				59334F6A32F5FB5136468FD2AE580236 /* MGPlayerView-umbrella.h */,
+				5C8D87629E5E19F1DB7E3CB951EB6EEF /* MGPlayerView.debug.xcconfig */,
+				4BAB8D4988FE3044EE67976FA1E4C9BE /* MGPlayerView.release.xcconfig */,
+				E44E0D3B3B6EF4E6FC359065AF00B023 /* ResourceBundle-MGPlayerView-MGPlayerView-Info.plist */,
 			);
-			name = ContentView;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MGPlayerView";
 			sourceTree = "<group>";
 		};
-		B2376EC2446C5A23C1E80B12E326CB21 /* MGPlayerView */ = {
+		998C39EBF87A9F19D0916295F9EFD5FA /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				E36EC177325A4294153A87D7F9AD6B9C /* Assets.xcassets */,
-				6FB010F81CA46B7308E4D0250CAA2BC7 /* Category */,
-				855E5D7E1B1F9BED1866732211095FD8 /* ContentView */,
-				3D518A8B4CD2591C69BDFBB6EFCDF819 /* GestureView */,
-				B85F43E069D7C5154C722AA27336A29E /* Main */,
-				800EC22001B19B89D0F85207698D65DE /* MaskView */,
-				F299295B012F3D49280D08F01BB22486 /* Pod */,
-				C63EE27453BDDC7DADB8B1340FA91483 /* Protocol */,
-				80B04A50FA32D5F0436C0B67811654B3 /* Support Files */,
-			);
-			name = MGPlayerView;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		B85F43E069D7C5154C722AA27336A29E /* Main */ = {
-			isa = PBXGroup;
-			children = (
-				99E16028A2C64A3514911B3663A5AD94 /* Common.h */,
-				B400F0BA3C9F275C392DFEA369B90B5B /* Common.m */,
-				D90273E7B7DB8F4B0AB74FDFFDD65A30 /* MGPlayerView.h */,
-				6058F278ACCDE00243F9B0D9B0ED2838 /* MGPlayerView.m */,
-				9AED05BEB268926BD2929995EB538A52 /* MGPlayerView+Base.h */,
-				8434438671E4671D8365B3643A4CFD17 /* MGPlayerView+Base.m */,
-				E146884DECE44997B9BD232FFCC4A3A0 /* MGPlayerView+Property.h */,
-				AF924129A75ADC900F6C66297E19CFE4 /* PlayerFullScreenRotateAnimator.h */,
-				68848E2CA9EA5E21E262D7EFA6115DAE /* PlayerFullScreenRotateAnimator.m */,
-				8A1FFD1EC823E266557060D92058625C /* PlayerFullScreenViewController.h */,
-				FC1549A7BD023ED0561EBD974193B2BF /* PlayerFullScreenViewController.m */,
-			);
-			name = Main;
-			sourceTree = "<group>";
-		};
-		C63EE27453BDDC7DADB8B1340FA91483 /* Protocol */ = {
-			isa = PBXGroup;
-			children = (
-				070D5E03C106229FBB613D016F04C044 /* PlayerView_prv.h */,
-				736C011BE5648827744F7395841E3372 /* PlayerViewCallbackProtocol.h */,
-				5BA0220EDE79D571FDA17EF8665C7076 /* PlayerViewProtocol.h */,
+				FAF4607E4E437BC4FAE6A35AA36A922A /* PlayerView_prv.h */,
+				09D5A40E74D9F27A96174B6147F33284 /* PlayerViewCallbackProtocol.h */,
+				B65E98C66C3DB5321DCF1029B159E020 /* PlayerViewProtocol.h */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		B477A752D7951C7BA2D801E1DD7AA380 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				9C0C3601E2085BE0F51FA9FD84E04641 /* NSString+customTime.h */,
+				424E63BFDED44B3574AEDA5A8EEF7B7E /* NSString+customTime.m */,
+				A79B6F59E3B054F691B1924D41D0953D /* NSTimer+timerBlock.h */,
+				D5861F5F7F6EE87498670496DF95B3D3 /* NSTimer+timerBlock.m */,
+			);
+			name = Category;
 			sourceTree = "<group>";
 		};
 		C84A449C2DE4F91F0620A5147DD42E0F /* Support Files */ = {
@@ -514,7 +573,7 @@
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				694A388B58DEFF0189464E5EBD6720BC /* Development Pods */,
+				DE5245C6D5839F0CFE8793EF3B1DB523 /* Development Pods */,
 				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
 				7529FD53BCE26816CCD46658378AAF1B /* Pods */,
 				8165C58D388F21734CFC36BCA6EB1727 /* Products */,
@@ -522,19 +581,58 @@
 			);
 			sourceTree = "<group>";
 		};
-		F299295B012F3D49280D08F01BB22486 /* Pod */ = {
+		D43E140E52D8D5E83160CABE02125880 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				72B0576C2E81D8D898C46DD40AB72096 /* LICENSE */,
-				1FBEA746743428F72399B1FA7E79DBAF /* MGPlayerView.podspec */,
-				82DDEC7E25C989507A9E7322F9CF75E7 /* README.md */,
+				D87344C9919D93BA045A2B8463E64ADD /* Common.h */,
+				95295D36834417FCF506C8BEAEC52FA9 /* Common.m */,
+				C867E3C8372DC6585061FE02CE44E547 /* MGPlayerView.h */,
+				D8051FFCC3575F94A3A2072741AD34E1 /* MGPlayerView.m */,
+				987EAF9BB0B7733D8B77B114790D0040 /* MGPlayerView+Base.h */,
+				A1251ACECD1FED3E3874CF2DCEAC6BBA /* MGPlayerView+Base.m */,
+				6422D0ACE0DD5A2CAFF4C785C03558F8 /* MGPlayerView+Property.h */,
+				EB6BF5DC9AAAAC0157C142D40F0E80D3 /* PlayerFullScreenRotateAnimator.h */,
+				1A076F362E1B20A3E4217FC33D09FE51 /* PlayerFullScreenRotateAnimator.m */,
+				607AE3834B4EBC4DBA256D4748DDB91F /* PlayerFullScreenViewController.h */,
+				0B38E5BF3D17EB6B0F963E434BE1EF9D /* PlayerFullScreenViewController.m */,
 			);
-			name = Pod;
+			name = Main;
+			sourceTree = "<group>";
+		};
+		DE5245C6D5839F0CFE8793EF3B1DB523 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				56E869670044A5AEB538393A775FCF59 /* MGPlayerView */,
+			);
+			name = "Development Pods";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		0443A070971F060E70084459E7A8E9EE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1B42BC836E46EAA9D3A903A7110C6DA /* MASCompositeConstraint.h in Headers */,
+				3889F109041175E64F3E775E0F8A11B4 /* MASConstraint.h in Headers */,
+				8CF4219CE2A8EA77ADCF215F332FBB73 /* MASConstraint+Private.h in Headers */,
+				489F61BF605B68A97F6C9283377A6C93 /* MASConstraintMaker.h in Headers */,
+				BF1682B88F636AB7C61F6CFBD50E70D0 /* MASLayoutConstraint.h in Headers */,
+				7F766AA4E220D733E630364F0B5EDB04 /* Masonry.h in Headers */,
+				2A287976824F43F65BF63D9A3A861529 /* Masonry-umbrella.h in Headers */,
+				1B09DC9100DDF248C19A5F39AB304036 /* MASUtilities.h in Headers */,
+				2860F9B387CCE5C0C66E5D04CEB90614 /* MASViewAttribute.h in Headers */,
+				B70E346373CB3E90ED0336498DDAD018 /* MASViewConstraint.h in Headers */,
+				0378ED5C29D4141040EFD3DC956DC42D /* NSArray+MASAdditions.h in Headers */,
+				FD1B08FC50C271F2E20CE4899512CEF7 /* NSArray+MASShorthandAdditions.h in Headers */,
+				C3FF18FB2767360764789B64197B85D3 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
+				724FB243EBA4FA669FE2F58549E6920A /* View+MASAdditions.h in Headers */,
+				3418306E7905ACCA5F155186BDA37B47 /* View+MASShorthandAdditions.h in Headers */,
+				7C561D620FB2C8BE9E20DD1397952DC1 /* ViewController+MASAdditions.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		960BA2FC75265FF55584FE8F50138040 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -577,29 +675,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E97219045258B9C71538C88D3214E99B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3AA30254C0EC9B1E3F40572A90395E1D /* MASCompositeConstraint.h in Headers */,
-				77CCB926803F2369C3811D63EA716A70 /* MASConstraint.h in Headers */,
-				A73AB0645DB1DFED71A552F4A7088F82 /* MASConstraint+Private.h in Headers */,
-				BCA0B35762FFA3FDC34B1B89B8348E65 /* MASConstraintMaker.h in Headers */,
-				8B0F8A1C68749E0042FF8C283DDE70C1 /* MASLayoutConstraint.h in Headers */,
-				BC50154C67E12FB866460790FF23755A /* Masonry.h in Headers */,
-				545DF050178C5829F671C9601EC84524 /* Masonry-umbrella.h in Headers */,
-				414BF5BF78C7B4FE6E48B2D5BA41FBEA /* MASUtilities.h in Headers */,
-				C05929C7DB70F6439083ECE13D21F671 /* MASViewAttribute.h in Headers */,
-				2857F65170AD443FC1B560C4D4A1582B /* MASViewConstraint.h in Headers */,
-				0C46CD9C84A742763331B7454B6CC2D9 /* NSArray+MASAdditions.h in Headers */,
-				2E4F4E3774465542479D61AE7B4D3324 /* NSArray+MASShorthandAdditions.h in Headers */,
-				A8A4A6C720C95BD8F052961B33E84D56 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */,
-				15ED6F425F1CFA59A4934E34C7716AA7 /* View+MASAdditions.h in Headers */,
-				C38788C786E65BCAA26ACF4045EA93CC /* View+MASShorthandAdditions.h in Headers */,
-				8B40EAADC67FEE064FD9F5F8E6051FBC /* ViewController+MASAdditions.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -615,8 +690,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				54E7687463A78A4DCB7A554A730F1BFC /* PBXTargetDependency */,
-				F9DFCE569F375375D9538DC6222E02F1 /* PBXTargetDependency */,
+				515A92663A972465368ED0D4A4FE19C6 /* PBXTargetDependency */,
+				86D1A0A8A6D7EE2AB62509831A5A02BB /* PBXTargetDependency */,
 			);
 			name = "Pods-MGPlayerView_Example";
 			productName = Pods_MGPlayerView_Example;
@@ -625,12 +700,12 @@
 		};
 		55AF53E6C77A10ED4985E04D74A8878E /* Masonry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 518FA9B3CA4FA9EBCABB76FBF9C0905B /* Build configuration list for PBXNativeTarget "Masonry" */;
+			buildConfigurationList = E4F3C9AB6DAD66E86DEE59903075335A /* Build configuration list for PBXNativeTarget "Masonry" */;
 			buildPhases = (
-				E97219045258B9C71538C88D3214E99B /* Headers */,
-				F6CE9D415C26A4461FA32B46E863FF44 /* Sources */,
-				64DE3E5A493FDE5F464B0A858C36BC29 /* Frameworks */,
-				93BD9D8D2F9C8727BC23634E2B4782E7 /* Resources */,
+				0443A070971F060E70084459E7A8E9EE /* Headers */,
+				B21C0C0900A133C10EB919C772B491EC /* Sources */,
+				1A82E5B73EC09331A78EC88310037516 /* Frameworks */,
+				4C7E599B8565C32276282C3C06C23A4A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -643,11 +718,11 @@
 		};
 		9A6F9254969AB293E793589B689DF58A /* MGPlayerView-MGPlayerView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F6697DB5216FD16A43D4486CDE669BB /* Build configuration list for PBXNativeTarget "MGPlayerView-MGPlayerView" */;
+			buildConfigurationList = 899AD896BA23F81C840BC974DF042700 /* Build configuration list for PBXNativeTarget "MGPlayerView-MGPlayerView" */;
 			buildPhases = (
-				19608BFB25DFDE8A8C381986B600D7FC /* Sources */,
-				EFDAB43B9DA5CE5E787569414D9B6DCC /* Frameworks */,
-				36A564FC6F876C359680B2577EDA0FAA /* Resources */,
+				9A392DF80AD3C8A74FE86EEBCFD62418 /* Sources */,
+				B0489CEDC0A84709E213072AECEEF08E /* Frameworks */,
+				4F65BD3C64EEE9FA074C0E8D863CBB67 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -670,8 +745,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				0169414A79084E46CF8C3EC45543E7BD /* PBXTargetDependency */,
-				F6078416204C18FFFEFA4376449A5804 /* PBXTargetDependency */,
+				18C4C9D9D9C6840F29504E9D43034025 /* PBXTargetDependency */,
+				268F1948F98CA1E31AA78DCB40BFA4A4 /* PBXTargetDependency */,
 			);
 			name = MGPlayerView;
 			productName = MGPlayerView;
@@ -690,7 +765,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				2425B56C2C1BD6635817A293F249BC57 /* PBXTargetDependency */,
+				29CD05D025B006BA27780667DAE4F8EF /* PBXTargetDependency */,
 			);
 			name = "Pods-MGPlayerView_Tests";
 			productName = Pods_MGPlayerView_Tests;
@@ -737,22 +812,47 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		36A564FC6F876C359680B2577EDA0FAA /* Resources */ = {
+		4C7E599B8565C32276282C3C06C23A4A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0969BCFC85A3C87ED17338623C2A7AC8 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F65BD3C64EEE9FA074C0E8D863CBB67 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EBA8B220B279EA094955BFE6DD221DC /* bofang@2x.png in Resources */,
+				AB042BE3846FAF2D95DDA212B67B30D1 /* bofang@3x.png in Resources */,
+				140A4485E3BDACEF73ADDD79F0CB96C7 /* bofang_s@2x.png in Resources */,
+				AF2EAC69720F5EEE9FF35FB836ACDB34 /* bofang_s@3x.png in Resources */,
+				9C6344D0493A419CD0FD5836E140A30E /* brigh@2x.png in Resources */,
+				4DDC68424D7B7CA21BC59FDD9BD6B30C /* brigh@3x.png in Resources */,
+				B4CF14FEBC9F4397F1FD327E32E5650B /* fanhui@2x.png in Resources */,
+				59D76572A33EC218487CFA7A7C82C851 /* fanhui@3x.png in Resources */,
+				7DB09A7383F0AA02912D5CB8E77E5919 /* jiesuo@2x.png in Resources */,
+				26AA158AB3882431AA96DF48EF154C95 /* jiesuo@3x.png in Resources */,
+				9AF998A262DB00FA988F95238A5758FD /* liangdu@2x.png in Resources */,
+				AE7BE85DAA1B15F8A1667A8F5E2C3380 /* liangdu@3x.png in Resources */,
+				43F877079C756386F8E24DBDEF24168C /* quanping@2x.png in Resources */,
+				98FFB4A89EE85A3D7F6610822DEAF263 /* quanping@3x.png in Resources */,
+				EBD876920275AC27DA6803D0FE10D258 /* suoping@2x.png in Resources */,
+				369380E42D9A0B4708DFDC5E57F7E492 /* suoping@3x.png in Resources */,
+				52F5CC3A8CEAA86735695964823867FE /* thumbImage@2x.png in Resources */,
+				E9A7849BC4190B67A664DB302C630A02 /* thumbImage@3x.png in Resources */,
+				73111119A1C26846F58B7CC2209534AA /* thumbImage_h@2x.png in Resources */,
+				003EF9932CEF17D624879D46B15A3DDF /* thumbImage_h@3x.png in Resources */,
+				1E99CCD6FAF3EE6B8E0291C0ACCA62CD /* zanting@2x.png in Resources */,
+				F39987B9DD51A1A287E3AB55E3C8637A /* zanting@3x.png in Resources */,
+				D727D5174B211092656C261F3F191959 /* zanting_s@2x.png in Resources */,
+				3D83EE838ED354F81453F675E774358F /* zanting_s@3x.png in Resources */,
+				C9F047BB75B2E6952BDC13DA986598AC /* ZFPlayer_bottom_shadow.png in Resources */,
+				B93742AB18FABD96550235043EA62A95 /* ZFPlayer_top_shadow.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		7CA56B3A071902D600FAEB75D3F06BE7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		93BD9D8D2F9C8727BC23634E2B4782E7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -799,13 +899,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		19608BFB25DFDE8A8C381986B600D7FC /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		61685E2A67C9EAD5A10B308E082908ED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -814,60 +907,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F6CE9D415C26A4461FA32B46E863FF44 /* Sources */ = {
+		9A392DF80AD3C8A74FE86EEBCFD62418 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E84B2528C3D580605DDBAE4371622A0 /* MASCompositeConstraint.m in Sources */,
-				0A70E3CA27F41640FA0B7838736E5AF3 /* MASConstraint.m in Sources */,
-				08DF4896A5F89F031F7E1C305CE9A1E0 /* MASConstraintMaker.m in Sources */,
-				D3E70BDAD50F4B10E06544C1778C1F13 /* MASLayoutConstraint.m in Sources */,
-				C65F0F1F41384EFE0B6A9DA3CB3A1248 /* Masonry-dummy.m in Sources */,
-				EB31AC5CEC0E5488930485CB94869B1F /* MASViewAttribute.m in Sources */,
-				339101D2DB340273DF47D6172B5F1FA1 /* MASViewConstraint.m in Sources */,
-				7BE871796FFE1C8C08462A77E4163B83 /* NSArray+MASAdditions.m in Sources */,
-				9CF176DB1B71E0A40FAFBE496CC14EA5 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
-				AEFF563DA76A5CA2003AE42FFF840D55 /* View+MASAdditions.m in Sources */,
-				1B857F8CA614CA5016DBDBC8D417051F /* ViewController+MASAdditions.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B21C0C0900A133C10EB919C772B491EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				32F551769CAA92B3E34E90F1B9DA2EC7 /* MASCompositeConstraint.m in Sources */,
+				6656F8272B1CC2C72830AF38E82DFACA /* MASConstraint.m in Sources */,
+				699F592387664C8F9A9A7A18F2C82BBE /* MASConstraintMaker.m in Sources */,
+				1FA05B9DCCA68A231FD5AD12FCB92873 /* MASLayoutConstraint.m in Sources */,
+				DF158D5CBB0F2DD5E1F11A424BA2B037 /* Masonry-dummy.m in Sources */,
+				D0353CB308A5075C05A5FD32EB61469F /* MASViewAttribute.m in Sources */,
+				1A7AFB3283EF4369011E2CB7814382A1 /* MASViewConstraint.m in Sources */,
+				EB597CAA5791F41977B7A7AAA377391A /* NSArray+MASAdditions.m in Sources */,
+				B33E2554DADB2B59A572BFBCD03D0306 /* NSLayoutConstraint+MASDebugAdditions.m in Sources */,
+				0B1703133BED6257DC836E86C722C874 /* View+MASAdditions.m in Sources */,
+				905E51279F5972277AB26FDFE12D0697 /* ViewController+MASAdditions.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0169414A79084E46CF8C3EC45543E7BD /* PBXTargetDependency */ = {
+		18C4C9D9D9C6840F29504E9D43034025 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "MGPlayerView-MGPlayerView";
 			target = 9A6F9254969AB293E793589B689DF58A /* MGPlayerView-MGPlayerView */;
-			targetProxy = 536E3B435D039D133DF1D041E5CFF331 /* PBXContainerItemProxy */;
+			targetProxy = 120F0EC21F00D3D64C376F5EE1442932 /* PBXContainerItemProxy */;
 		};
-		2425B56C2C1BD6635817A293F249BC57 /* PBXTargetDependency */ = {
+		268F1948F98CA1E31AA78DCB40BFA4A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Masonry;
+			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
+			targetProxy = 2629E180D8FA7DC232C2628BEBFA64AE /* PBXContainerItemProxy */;
+		};
+		29CD05D025B006BA27780667DAE4F8EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-MGPlayerView_Example";
 			target = 51D0CF72336F9EAEEBF545246A9631B6 /* Pods-MGPlayerView_Example */;
-			targetProxy = E97F2CE5E3124177914EF9BE2B888702 /* PBXContainerItemProxy */;
+			targetProxy = 8C57D4EE0BF725D618D3AFBD8A004601 /* PBXContainerItemProxy */;
 		};
-		54E7687463A78A4DCB7A554A730F1BFC /* PBXTargetDependency */ = {
+		515A92663A972465368ED0D4A4FE19C6 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MGPlayerView;
 			target = CD9F781A22D8A86CF63DE7FB99ACDA4F /* MGPlayerView */;
-			targetProxy = DD5834C7E2527B14DDB2C8583637AC30 /* PBXContainerItemProxy */;
+			targetProxy = D79FC3623A60797352339383479C7520 /* PBXContainerItemProxy */;
 		};
-		F6078416204C18FFFEFA4376449A5804 /* PBXTargetDependency */ = {
+		86D1A0A8A6D7EE2AB62509831A5A02BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Masonry;
 			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = 69FCC8A4241937FFD69B1865E3A149D9 /* PBXContainerItemProxy */;
-		};
-		F9DFCE569F375375D9538DC6222E02F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Masonry;
-			target = 55AF53E6C77A10ED4985E04D74A8878E /* Masonry */;
-			targetProxy = DDD7E947F96837BE0D1F25C9011E4511 /* PBXContainerItemProxy */;
+			targetProxy = F050EF2EAC0D41081B81908F5928C288 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		17D1889FB409FB4F86132404F7E6C24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C8D87629E5E19F1DB7E3CB951EB6EEF /* MGPlayerView.debug.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGPlayerView";
+				IBSC_MODULE = MGPlayerView;
+				INFOPLIST_FILE = "Target Support Files/MGPlayerView/ResourceBundle-MGPlayerView-MGPlayerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MGPlayerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		1B4722F01BB0DE9214DA0B424D3A5E98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9AB6893D0C651C71356A24472C8B8A1E /* Pods-MGPlayerView_Example.debug.xcconfig */;
@@ -966,25 +1082,40 @@
 			};
 			name = Debug;
 		};
-		54023AF0B60F275BD4B19099185D8195 /* Release */ = {
+		2644E70B2B22D44E69AFA5E1FB442584 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FF5ED200A9F16208CA6E9142A600914 /* MGPlayerView.release.xcconfig */;
+			baseConfigurationReference = 419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGPlayerView";
-				IBSC_MODULE = MGPlayerView;
-				INFOPLIST_FILE = "Target Support Files/MGPlayerView/ResourceBundle-MGPlayerView-MGPlayerView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = MGPlayerView;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
+				PRODUCT_MODULE_NAME = Masonry;
+				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
 		6B801FA2AAA2BCC29AEB3399906AC520 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1FF5ED200A9F16208CA6E9142A600914 /* MGPlayerView.release.xcconfig */;
+			baseConfigurationReference = 4BAB8D4988FE3044EE67976FA1E4C9BE /* MGPlayerView.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1046,22 +1177,6 @@
 			};
 			name = Release;
 		};
-		924E179B65273CA4AC94381390DE4078 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0163A677304DD7F6519BD114013F355 /* MGPlayerView.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGPlayerView";
-				IBSC_MODULE = MGPlayerView;
-				INFOPLIST_FILE = "Target Support Files/MGPlayerView/ResourceBundle-MGPlayerView-MGPlayerView-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = MGPlayerView;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
 		92DABC8A99397AB41B91532D20B6ECE7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 384F30EE0E6C03332C61891D2BCCC901 /* Pods-MGPlayerView_Example.release.xcconfig */;
@@ -1095,9 +1210,25 @@
 			};
 			name = Release;
 		};
-		C0411E8435FF37CDE1BA312167110FCE /* Release */ = {
+		A27293A5355E6F3B423496F932536CD8 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 419A961AD957E23BAB6A998ED7623134 /* Masonry.release.xcconfig */;
+			baseConfigurationReference = 4BAB8D4988FE3044EE67976FA1E4C9BE /* MGPlayerView.release.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/MGPlayerView";
+				IBSC_MODULE = MGPlayerView;
+				INFOPLIST_FILE = "Target Support Files/MGPlayerView/ResourceBundle-MGPlayerView-MGPlayerView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = MGPlayerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		AC18221E0375A64A961BABD041FBCC4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1120,11 +1251,10 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1222,7 +1352,7 @@
 		};
 		E94A1B74D0CD5B78A80369AB5780039F /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0163A677304DD7F6519BD114013F355 /* MGPlayerView.debug.xcconfig */;
+			baseConfigurationReference = 5C8D87629E5E19F1DB7E3CB951EB6EEF /* MGPlayerView.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1250,48 +1380,9 @@
 			};
 			name = Debug;
 		};
-		F0E2290AD646DB88B12F4D74A5665AA9 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F287598D192FA586BD4AECCD85B988A4 /* Masonry.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/Masonry/Masonry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Masonry/Masonry-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Masonry/Masonry.modulemap";
-				PRODUCT_MODULE_NAME = Masonry;
-				PRODUCT_NAME = Masonry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F6697DB5216FD16A43D4486CDE669BB /* Build configuration list for PBXNativeTarget "MGPlayerView-MGPlayerView" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				924E179B65273CA4AC94381390DE4078 /* Debug */,
-				54023AF0B60F275BD4B19099185D8195 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		468ED7606A369947214AF6CC71E7A41B /* Build configuration list for PBXNativeTarget "MGPlayerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1319,11 +1410,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		518FA9B3CA4FA9EBCABB76FBF9C0905B /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+		899AD896BA23F81C840BC974DF042700 /* Build configuration list for PBXNativeTarget "MGPlayerView-MGPlayerView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F0E2290AD646DB88B12F4D74A5665AA9 /* Debug */,
-				C0411E8435FF37CDE1BA312167110FCE /* Release */,
+				17D1889FB409FB4F86132404F7E6C24C /* Debug */,
+				A27293A5355E6F3B423496F932536CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1333,6 +1424,15 @@
 			buildConfigurations = (
 				1B4722F01BB0DE9214DA0B424D3A5E98 /* Debug */,
 				92DABC8A99397AB41B91532D20B6ECE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4F3C9AB6DAD66E86DEE59903075335A /* Build configuration list for PBXNativeTarget "Masonry" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AC18221E0375A64A961BABD041FBCC4D /* Debug */,
+				2644E70B2B22D44E69AFA5E1FB442584 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

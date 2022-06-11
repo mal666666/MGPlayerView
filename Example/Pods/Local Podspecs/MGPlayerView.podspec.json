@@ -24,7 +24,7 @@
   "default_subspecs": "All",
   "resource_bundles": {
     "MGPlayerView": [
-      "MGPlayerView/Assets/*.{xcassets}"
+      "MGPlayerView/Assets/Img/*.png"
     ]
   },
   "dependencies": {

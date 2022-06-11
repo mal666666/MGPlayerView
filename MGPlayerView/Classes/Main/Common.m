@@ -6,6 +6,8 @@
 //
 
 #import "Common.h"
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @implementation Common
 

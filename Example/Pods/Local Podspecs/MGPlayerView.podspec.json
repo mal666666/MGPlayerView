@@ -32,10 +32,7 @@
 
     ]
   },
-  "prefix_header_contents": [
-    "#import\"Masonry.h\"",
-    "#import\"Common.h\""
-  ],
+  "prefix_header_contents": "#import\"Masonry.h\"",
   "subspecs": [
     {
       "name": "All",

@@ -5,6 +5,7 @@
 
 #import "BrightnessView.h"
 #import "PlayerView_prv.h"
+#import "Common.h"
 
 #define ZLScreenWidth [UIScreen mainScreen].bounds.size.width
 #define ZLScreenHeight [UIScreen mainScreen].bounds.size.height

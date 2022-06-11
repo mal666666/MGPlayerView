@@ -11,6 +11,7 @@
 #import "NSTimer+timerBlock.h"
 #import "PlayerGestureView.h"
 #import <AVFoundation/AVFoundation.h>
+#import "Common.h"
 
 @interface FullMaskView ()<CNPlayerGestureViewDelegate>
 

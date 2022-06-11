@@ -76,6 +76,6 @@ Pod::Spec.new do |s|
   # s.frameworks = 'UIKit', 'MapKit'
   # s.prefix_header_file = true
   s.dependency 'Masonry'
-  s.prefix_header_contents = '#import"Masonry.h"', '#import"Common.h"'
+  s.prefix_header_contents = '#import"Masonry.h"'
 
 end

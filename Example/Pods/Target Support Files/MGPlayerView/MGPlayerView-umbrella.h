@@ -15,7 +15,6 @@
 #import "PlayerContentView.h"
 #import "BrightnessView.h"
 #import "PlayerGestureView.h"
-#import "Common.h"
 #import "MGPlayerView+Base.h"
 #import "MGPlayerView+Property.h"
 #import "MGPlayerView.h"

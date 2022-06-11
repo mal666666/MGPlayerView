@@ -30,6 +30,10 @@
 
 @implementation FullMaskView
 
++ (NSBundle * _Nullable)MGPlayerViewBundle {
+    return [NSBundle bundleWithURL:[[[NSBundle bundleForClass:NSClassFromString(@"MGPlayerView")] resourceURL] URLByAppendingPathComponent:@"MGPlayerView.bundle"]];
+}
+
 @synthesize delegateUI;
 
 -(instancetype)initWithFrame:(CGRect)frame{
@@ -254,8 +258,8 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
-//        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
         _topToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_topToolView];
         [_topToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -269,8 +273,8 @@
 - (UIView *)bottomToolView {
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
-        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
-//        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
         _bottomToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_bottomToolView];
         [_bottomToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -286,7 +290,7 @@
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_backBtn addTarget:self action:@selector(touchLeftBackButtonEvent) forControlEvents:UIControlEventTouchUpInside];
 //        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"fanhui")] forState:UIControlStateNormal];
-//        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [_backBtn setImageEdgeInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
         [self.topToolView addSubview:_backBtn];
         [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -304,8 +308,8 @@
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
 //        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang")] forState:UIControlStateSelected];
 //        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting")] forState:UIControlStateNormal];
-//        [_playBtn setImage:[UIImage imageNamed:@"bofang" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
-//        [_playBtn setImage:[UIImage imageNamed:@"zanting" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:@"bofang" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_playBtn setImage:[UIImage imageNamed:@"zanting" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         _playBtn.selected =YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -323,8 +327,8 @@
         [_lockBtn addTarget:self action:@selector(touchLockButtonEvent:) forControlEvents:UIControlEventTouchUpInside];
 //        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"suoping")] forState:UIControlStateSelected];
 //        [_lockBtn setImage:[UIImage imageNamed:PlayerView(@"jiesuo")] forState:UIControlStateNormal];
-//        [_lockBtn setImage:[UIImage imageNamed:@"suoping" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
-//        [_lockBtn setImage:[UIImage imageNamed:@"jiesuo" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_lockBtn setImage:[UIImage imageNamed:@"suoping" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_lockBtn setImage:[UIImage imageNamed:@"jiesuo" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [self addSubview:_lockBtn];
         [_lockBtn mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.height.offset(44);
@@ -377,8 +381,8 @@
         _slider = [[CNPSlider alloc] init];
         //_slider.sliderHeight = 2;
         _slider.maximumTrackTintColor = [UIColor clearColor];
-//        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
-//        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage_h" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateHighlighted];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage_h" inBundle:[FullMaskView MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateHighlighted];
 //        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage")] forState:UIControlStateNormal];
 //        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage_h")] forState:UIControlStateHighlighted];
         [_slider addTarget:self action:@selector(touchSliderValueChangeEvent:) forControlEvents:(UIControlEventValueChanged)];

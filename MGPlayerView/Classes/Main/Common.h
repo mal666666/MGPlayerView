@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Common : NSObject
 
-FOUNDATION_EXTERN NSBundle* _Nullable MGPlayerViewBundle(void);
++ (NSBundle* _Nullable)MGPlayerViewBundle;
 
 @end
 

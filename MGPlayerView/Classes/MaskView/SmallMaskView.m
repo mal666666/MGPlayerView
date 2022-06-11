@@ -233,7 +233,7 @@
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
 //        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
-        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil];
         _topToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_topToolView];
         [_topToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -248,7 +248,7 @@
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
 //        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
-        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
+        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil];
         _bottomToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_bottomToolView];
         [_bottomToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -264,7 +264,7 @@
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_backBtn addTarget:self action:@selector(touchLeftBackButtonEvent) forControlEvents:UIControlEventTouchUpInside];
 //        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"fanhui")] forState:UIControlStateNormal];
-        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [_backBtn setImageEdgeInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
         [self addSubview:_backBtn];
         [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -281,7 +281,7 @@
         [_toFullVCBtn addTarget:self action:@selector(touchEnterFullScreenButtonEvent) forControlEvents:UIControlEventTouchUpInside];
 //        [_toFullVCBtn setImage:[UIImage imageNamed: PlayerView(@"quanping")]
 //                      forState:UIControlStateNormal];
-        [_toFullVCBtn setImage:[UIImage imageNamed:@"quanping" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_toFullVCBtn setImage:[UIImage imageNamed:@"quanping" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [self.bottomToolView addSubview:_toFullVCBtn];
         [_toFullVCBtn mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.height.offset(44);
@@ -298,8 +298,8 @@
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
 //        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang_s")] forState:UIControlStateSelected];
 //        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting_s")] forState:UIControlStateNormal];
-        [_playBtn setImage:[UIImage imageNamed:@"bofang_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
-        [_playBtn setImage:[UIImage imageNamed:@"zanting_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:@"bofang_s" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_playBtn setImage:[UIImage imageNamed:@"zanting_s" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         _playBtn.selected = YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {
@@ -353,8 +353,8 @@
         _slider = [[CNPSlider alloc] init];
         //_slider.sliderHeight = 2;
         _slider.maximumTrackTintColor = [UIColor clearColor];
-        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
-        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage_h" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateHighlighted];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_slider setThumbImage:[UIImage imageNamed:@"thumbImage_h" inBundle:[Common MGPlayerViewBundle] compatibleWithTraitCollection:nil] forState:UIControlStateHighlighted];
 //        [_slider setThumbImage:[UIImage imageNamed:PlayerView(@"thumbImage_h")] forState:UIControlStateHighlighted];
         [_slider addTarget:self action:@selector(touchSliderValueChangeEvent:) forControlEvents:(UIControlEventValueChanged)];
         [_slider addTarget:self action:@selector(touchSliderTouchDownEvent:) forControlEvents:(UIControlEventTouchDown)];

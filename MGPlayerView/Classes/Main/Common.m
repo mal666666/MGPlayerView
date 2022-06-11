@@ -9,7 +9,7 @@
 
 @implementation Common
 
-NSBundle * _Nullable MGPlayerViewBundle() {
++ (NSBundle * _Nullable)MGPlayerViewBundle {
     return [NSBundle bundleWithURL:[[[NSBundle bundleForClass:NSClassFromString(@"MGPlayerView")] resourceURL] URLByAppendingPathComponent:@"MGPlayerView.bundle"]];
 }
 

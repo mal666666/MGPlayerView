@@ -18,8 +18,8 @@
 }
 
 -(CGRect)trackRectForBounds:(CGRect)bounds {
-    float h = self.sliderHeight ? self.sliderHeight : 2;
-    bounds.origin.y = bounds.origin.y + (bounds.size.height-h-1)/2;
+    float h = self.sliderHeight ? self.sliderHeight : 2.2;
+    bounds.origin.y = bounds.origin.y + (bounds.size.height-h)/2;
     bounds.size.height= h;
     self.layer.cornerRadius = self.sliderHeight ? self.sliderHeight/2 : 1;
     return bounds;

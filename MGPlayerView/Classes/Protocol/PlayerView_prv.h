@@ -20,6 +20,13 @@
     (path);\
 })\
 
+//bundle位置
+#define MGPlayerViewBundle()\
+({\
+    NSBundle *framework = [NSBundle bundleWithURL:[[[NSBundle bundleForClass:NSClassFromString(@"MGPlayerView")] resourceURL] URLByAppendingPathComponent:@"MGPlayerView.bundle"]];\
+    (framework);\
+})\
+
 //浮层消失时间
 #define MaskViewHiddenWaitingTime 3
 //滑动方向

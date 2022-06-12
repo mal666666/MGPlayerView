@@ -27,10 +27,6 @@
 
 @implementation SmallMaskView
 
-//+ (NSBundle * _Nullable)MGPlayerViewBundle {
-//    return [NSBundle bundleWithURL:[[[NSBundle bundleForClass:NSClassFromString(@"MGPlayerView")] resourceURL] URLByAppendingPathComponent:@"MGPlayerView.bundle"]];
-//}
-
 @synthesize delegateUI;
 
 -(instancetype)initWithFrame:(CGRect)frame{

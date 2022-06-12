@@ -22,10 +22,6 @@
 
 @implementation BrightnessView
 
-+ (NSBundle * _Nullable)MGPlayerViewBundle {
-    return [NSBundle bundleWithURL:[[[NSBundle bundleForClass:NSClassFromString(@"MGPlayerView")] resourceURL] URLByAppendingPathComponent:@"MGPlayerView.bundle"]];
-}
-
 #pragma mark - 懒加载
 -(UILabel *)title {
     if (!_title) {
@@ -42,7 +38,7 @@
     if (!_backImage) {
         _backImage = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 79, 76)];
 //        _backImage.image  = [UIImage imageNamed:PlayerView(@"brigh")];
-        _backImage.image = [UIImage imageNamed:@"brigh" inBundle:[BrightnessView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+        _backImage.image = [UIImage imageNamed:@"brigh" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
     }
     return _backImage;
 }
@@ -214,16 +210,16 @@
         if (isDark) {
             self.title.textColor =[UIColor whiteColor];
 //            self.backImage.image  = [UIImage imageNamed:PlayerView(@"liangdu")];
-            self.backImage.image = [UIImage imageNamed:@"liangdu" inBundle:[BrightnessView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+            self.backImage.image = [UIImage imageNamed:@"liangdu" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         }else{
             self.title.textColor =[UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
 //            self.backImage.image =[UIImage imageNamed:PlayerView(@"brigh")];
-            self.backImage.image = [UIImage imageNamed:@"brigh" inBundle:[BrightnessView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+            self.backImage.image = [UIImage imageNamed:@"brigh" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         }
     } else {
         self.title.textColor =[UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
 //        self.backImage.image =[UIImage imageNamed:PlayerView(@"brigh")];
-        self.backImage.image = [UIImage imageNamed:@"brigh" inBundle:[BrightnessView MGPlayerViewBundle] compatibleWithTraitCollection:nil];
+        self.backImage.image = [UIImage imageNamed:@"brigh" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
     }
 }
 

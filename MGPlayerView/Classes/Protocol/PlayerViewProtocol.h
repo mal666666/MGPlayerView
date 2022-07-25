@@ -22,6 +22,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)setUrl:(NSURL *)url;
 //播放
 -(void)play;
+//暂停
+-(void)pause;
 //支持全屏
 -(void)supportFullScreenWithVC:(UIViewController *)vc;
 //退出全屏

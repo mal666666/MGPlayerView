@@ -22,6 +22,7 @@
     [self.view addSubview:playerView];
     [playerView setPlayUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
     [playerView setPlayUrl:@"http://mm.pushitongda.com:9999/ipfs/Qmd6cN231gVhRKw5seG2SpzS7GtFHZfkYzEVXf4GpASout"];
+    [playerView setPlayUrl:@"http://www.malgg.com/aaa/video.mp4"];
     [playerView supportFullScreenWithVC:self];
 //    [playerView activityIndicaHidden:YES];
     playerView.delegateUI =self;

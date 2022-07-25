@@ -145,6 +145,10 @@
 -(void)play{
     [self.contentView.playerLayer.player play];
 }
+//暂停
+-(void)pause{
+    [self.contentView.playerLayer.player pause];
+}
 //支持全屏
 -(void)supportFullScreenWithVC:(UIViewController *)vc{
     self.smallVC =vc;

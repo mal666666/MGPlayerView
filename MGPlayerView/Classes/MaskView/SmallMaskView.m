@@ -231,8 +231,8 @@
 - (UIView *)topToolView {
     if (!_topToolView) {
         _topToolView = [[UIView alloc] init];
-//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_top_shadow")];
-        UIImage *image = [UIImage imageNamed:@"ZFPlayer_top_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"top_shadow")];
+        UIImage *image = [UIImage imageNamed:@"top_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         _topToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_topToolView];
         [_topToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -246,8 +246,8 @@
 - (UIView *)bottomToolView {
     if (!_bottomToolView) {
         _bottomToolView = [[UIView alloc] init];
-//        UIImage *image = [UIImage imageNamed:PlayerView(@"ZFPlayer_bottom_shadow")];
-        UIImage *image = [UIImage imageNamed:@"ZFPlayer_bottom_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
+//        UIImage *image = [UIImage imageNamed:PlayerView(@"bottom_shadow")];
+        UIImage *image = [UIImage imageNamed:@"bottom_shadow" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         _bottomToolView.layer.contents = (id)image.CGImage;
         [self addSubview:_bottomToolView];
         [_bottomToolView mas_remakeConstraints:^(MASConstraintMaker *make) {
@@ -262,8 +262,8 @@
     if (!_backBtn) {
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_backBtn addTarget:self action:@selector(touchLeftBackButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-//        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"fanhui")] forState:UIControlStateNormal];
-        [_backBtn setImage:[UIImage imageNamed:@"fanhui" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+//        [_backBtn setImage:[UIImage imageNamed:PlayerView(@"back")] forState:UIControlStateNormal];
+        [_backBtn setImage:[UIImage imageNamed:@"back" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [_backBtn setImageEdgeInsets:UIEdgeInsetsMake(5, 10, 5, 0)];
         [self addSubview:_backBtn];
         [_backBtn mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -278,9 +278,9 @@
     if (!_toFullVCBtn) {
         _toFullVCBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_toFullVCBtn addTarget:self action:@selector(touchEnterFullScreenButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-//        [_toFullVCBtn setImage:[UIImage imageNamed: PlayerView(@"quanping")]
+//        [_toFullVCBtn setImage:[UIImage imageNamed: PlayerView(@"fullscreen")]
 //                      forState:UIControlStateNormal];
-        [_toFullVCBtn setImage:[UIImage imageNamed:@"quanping" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+        [_toFullVCBtn setImage:[UIImage imageNamed:@"fullscreen" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         [self.bottomToolView addSubview:_toFullVCBtn];
         [_toFullVCBtn mas_updateConstraints:^(MASConstraintMaker *make) {
             make.width.height.offset(44);
@@ -295,10 +295,10 @@
     if (!_playBtn) {
         _playBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_playBtn addTarget:self action:@selector(touchPlayAndPauseButtonEvent) forControlEvents:UIControlEventTouchUpInside];
-//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"bofang_s")] forState:UIControlStateSelected];
-//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"zanting_s")] forState:UIControlStateNormal];
-        [_playBtn setImage:[UIImage imageNamed:@"bofang_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
-        [_playBtn setImage:[UIImage imageNamed:@"zanting_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
+//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"play_s")] forState:UIControlStateSelected];
+//        [_playBtn setImage:[UIImage imageNamed:PlayerView(@"pause_s")] forState:UIControlStateNormal];
+        [_playBtn setImage:[UIImage imageNamed:@"play_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateSelected];
+        [_playBtn setImage:[UIImage imageNamed:@"pause_s" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil] forState:UIControlStateNormal];
         _playBtn.selected = YES;
         [self.bottomToolView addSubview:_playBtn];
         [_playBtn mas_updateConstraints:^(MASConstraintMaker *make) {

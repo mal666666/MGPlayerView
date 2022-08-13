@@ -24,14 +24,14 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)play;
 //暂停
 -(void)pause;
+//停止
+-(void)stop;
 //支持全屏
 -(void)supportFullScreenWithVC:(UIViewController *)vc;
 //退出全屏
 -(void)quitFullScreen:(void (^__nullable)(void))completion;
 //进入全屏
 -(void)toFullScreen:(void (^__nullable)(void))completion;
-//退出小屏
--(void)quitSmallScreen;
 //隐藏加载中菊花
 -(void)activityIndicaHidden:(BOOL)state;
 

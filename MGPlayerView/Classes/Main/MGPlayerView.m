@@ -182,8 +182,8 @@
         }];
     }
 }
-//退出小屏
--(void)quitSmallScreen{
+//停止
+-(void)stop{
     self.contentView.playerLayer.player = nil;
 }
 //设备方向完成改变

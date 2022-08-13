@@ -209,8 +209,8 @@
         BOOL isDark = (self.traitCollection.userInterfaceStyle == UIUserInterfaceStyleDark);
         if (isDark) {
             self.title.textColor =[UIColor whiteColor];
-//            self.backImage.image  = [UIImage imageNamed:PlayerView(@"liangdu")];
-            self.backImage.image = [UIImage imageNamed:@"liangdu" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
+//            self.backImage.image  = [UIImage imageNamed:PlayerView(@"luminance")];
+            self.backImage.image = [UIImage imageNamed:@"luminance" inBundle:MGPlayerViewBundle() compatibleWithTraitCollection:nil];
         }else{
             self.title.textColor =[UIColor colorWithRed:0.25f green:0.22f blue:0.21f alpha:1.00f];
 //            self.backImage.image =[UIImage imageNamed:PlayerView(@"brigh")];

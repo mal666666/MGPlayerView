@@ -7,9 +7,12 @@
 //
 
 #import "MGViewController.h"
-#import <MGPlayerView/MGPlayerView.h>
+#import "MGPlayerDetailController.h"
+#import "MGTableViewCell.h"
 
-@interface MGViewController ()<PlayerViewUICallbackProtocol>
+@interface MGViewController ()<UITableViewDelegate, UITableViewDataSource>
+
+@property (nonatomic, strong) NSMutableArray *arr;
 
 @end
 
@@ -18,38 +21,46 @@
 - (void)viewDidLoad{
     [super viewDidLoad];
     self.view.backgroundColor =[UIColor grayColor];
-    MGPlayerView *playerView =[[MGPlayerView alloc]initWithFrame:CGRectMake(0, 80, self.view.bounds.size.width, self.view.bounds.size.width *9/16)];
-    [self.view addSubview:playerView];
-    [playerView setPlayUrl:@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8"];
-    [playerView setPlayUrl:@"http://mm.pushitongda.com:9999/ipfs/Qmd6cN231gVhRKw5seG2SpzS7GtFHZfkYzEVXf4GpASout"];
-    [playerView setPlayUrl:@"http://www.malgg.com/aaa/video.mp4"];
-    [playerView supportFullScreenWithVC:self];
-//    [playerView activityIndicaHidden:YES];
-    playerView.delegateUI =self;
-    [playerView play];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1500 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [playerView quitSmallScreen];
-    });
-}
-#pragma mark --- PlayerViewUICallbackProtocol  ---
--(void)playStateEvent:(id)view state:(BOOL)isPlaying{
-    NSLog(@"%@",isPlaying?@"播放":@"暂停");
+    
+    self.arr = @[@"http://stream1.shopch.jp/HLS/out1/prog_index.m3u8",
+                 @"http://www.malgg.com/video/1.mp4",
+                 @"http://www.malgg.com/video/2.mp4",
+                 @"http://www.malgg.com/video/3.mp4",
+                 @"http://www.malgg.com/video/4.mp4",
+                 @"http://www.malgg.com/video/5.mp4",
+                 @"http://www.malgg.com/video/6.mp4"].mutableCopy;
+    UITableView *tab = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
+    tab.frame = CGRectMake(0, 0, UIScreen.mainScreen.bounds.size.width, UIScreen.mainScreen.bounds.size.height);
+    [tab registerClass:[MGTableViewCell class] forCellReuseIdentifier:@"cell"];
+    tab.delegate = self;
+    tab.dataSource = self;
+    [self.view addSubview:tab];
 }
 
--(void)smallMaskViewBackEvent:(id)playerView{
-    NSLog(@"退出视频");
+- (nonnull UITableViewCell *)tableView:(nonnull UITableView *)tableView cellForRowAtIndexPath:(nonnull NSIndexPath *)indexPath {
+    MGTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
+    if (!cell) {
+        cell = [[MGTableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"cell"];
+    }
+    [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
+    cell.textLabel.text = [NSString stringWithFormat:@"%ld", (long)indexPath.row];
+    [cell setImg:self.arr[indexPath.row]];
+    return cell;
 }
 
--(void)smallMaskViewToFullScreenEvent:(id)playerView completion:(void (^)(void))completion{
-    NSLog(@"去大屏");
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return self.arr.count;
 }
 
--(void)fullMaskViewBackEvent:(id)playerView completion:(void (^)(void))completion{
-    NSLog(@"去小屏");
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 80;
 }
 
--(UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    MGPlayerDetailController *vc = [[MGPlayerDetailController alloc]init];
+    vc.url = self.arr[indexPath.row];
+    [self.navigationController pushViewController:vc animated:YES];
 }
+
 
 @end

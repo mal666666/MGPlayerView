@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F264CAF28A14FF3003339C8 /* MGPlayerDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F264CAE28A14FF3003339C8 /* MGPlayerDetailController.m */; };
+		2F264CB528A5C669003339C8 /* MGNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F264CB428A5C669003339C8 /* MGNavigationController.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,6 +25,7 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9DA799DC681F77986D6C75AA /* Pods_MGPlayerView_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74004946C209A8B79D73C292 /* Pods_MGPlayerView_Tests.framework */; };
+		D7EF0E2B28A73EDB0043C8EA /* MGTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D7EF0E2A28A73EDB0043C8EA /* MGTableViewCell.m */; };
 		EFC4356D01DC8F1C9B473DA2 /* Pods_MGPlayerView_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6E1D293216DD72D211F76D4 /* Pods_MGPlayerView_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +42,10 @@
 /* Begin PBXFileReference section */
 		03A80A2C128F490C29EFD08E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		1E75F1257F6C6D44091C083B /* Pods-MGPlayerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPlayerView_Example.debug.xcconfig"; path = "Target Support Files/Pods-MGPlayerView_Example/Pods-MGPlayerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		2F264CAD28A14FF3003339C8 /* MGPlayerDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGPlayerDetailController.h; sourceTree = "<group>"; };
+		2F264CAE28A14FF3003339C8 /* MGPlayerDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGPlayerDetailController.m; sourceTree = "<group>"; };
+		2F264CB328A5C669003339C8 /* MGNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGNavigationController.h; sourceTree = "<group>"; };
+		2F264CB428A5C669003339C8 /* MGNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGNavigationController.m; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MGPlayerView_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGPlayerView_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,6 +73,8 @@
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9492922FAE54B92E021BACAA /* Pods-MGPlayerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MGPlayerView_Tests.release.xcconfig"; path = "Target Support Files/Pods-MGPlayerView_Tests/Pods-MGPlayerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D6E1D293216DD72D211F76D4 /* Pods_MGPlayerView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MGPlayerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7EF0E2928A73EDB0043C8EA /* MGTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MGTableViewCell.h; sourceTree = "<group>"; };
+		D7EF0E2A28A73EDB0043C8EA /* MGTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MGTableViewCell.m; sourceTree = "<group>"; };
 		E3767BB184DE90C1DA26D8CC /* MGPlayerView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MGPlayerView.podspec; path = ../MGPlayerView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
@@ -134,11 +143,17 @@
 			children = (
 				6003F59C195388D20070C39A /* MGAppDelegate.h */,
 				6003F59D195388D20070C39A /* MGAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MGViewController.h */,
 				6003F5A6195388D20070C39A /* MGViewController.m */,
+				2F264CAD28A14FF3003339C8 /* MGPlayerDetailController.h */,
+				2F264CAE28A14FF3003339C8 /* MGPlayerDetailController.m */,
+				2F264CB328A5C669003339C8 /* MGNavigationController.h */,
+				2F264CB428A5C669003339C8 /* MGNavigationController.m */,
+				D7EF0E2928A73EDB0043C8EA /* MGTableViewCell.h */,
+				D7EF0E2A28A73EDB0043C8EA /* MGTableViewCell.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for MGPlayerView";
@@ -370,8 +385,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F59E195388D20070C39A /* MGAppDelegate.m in Sources */,
+				2F264CAF28A14FF3003339C8 /* MGPlayerDetailController.m in Sources */,
 				6003F5A7195388D20070C39A /* MGViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				2F264CB528A5C669003339C8 /* MGNavigationController.m in Sources */,
+				D7EF0E2B28A73EDB0043C8EA /* MGTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -27,6 +27,7 @@
     [playerView setPlayUrl:self.url];
     [playerView supportFullScreenWithVC:self];
 //    [playerView activityIndicaHidden:YES];
+//    [playerView deviceOrientation:NO];
     playerView.delegateUI =self;
     [playerView play];
     self.playerView = playerView;

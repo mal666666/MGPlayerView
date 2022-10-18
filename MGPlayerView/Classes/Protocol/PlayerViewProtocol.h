@@ -34,6 +34,8 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)toFullScreen:(void (^__nullable)(void))completion;
 //隐藏加载中菊花
 -(void)activityIndicaHidden:(BOOL)state;
+//随设备旋转
+-(void)deviceOrientation:(BOOL)state;
 
 @end
 

@@ -21,6 +21,7 @@
 @property(strong, nonatomic) PlayerFullScreenViewController *fullVC;
 @property(strong, nonatomic) PlayerFullScreenRotateAnimator *animator;
 @property(strong, nonatomic) id obs;
+@property(assign, nonatomic) BOOL deviceOrientationState;
 
 @end
 
@@ -54,6 +55,8 @@
         };
         //调节亮度的动画
         [self addSubview:[BrightnessView sharedBrightnessView]];
+        //默认支持设备旋转
+        self.deviceOrientationState = YES;
     }
     return self;
 }
@@ -96,6 +99,10 @@
         self.fullMaskView.loadingView.hidesWhenStopped = YES;
         self.fullMaskView.loadingView.hidden = NO;
     }
+}
+//随设备旋转
+-(void)deviceOrientation:(BOOL)state {
+    self.deviceOrientationState = state;
 }
 //播放回调
 -(void)playerCallback {
@@ -188,6 +195,9 @@
 }
 //设备方向完成改变
 - (void)playerViewDeviceOrientationDidChange {
+    if (!self.deviceOrientationState) {
+        return;
+    }
     if (UIDeviceOrientationIsLandscape([UIDevice currentDevice].orientation) &&!self.smallVC.presentedViewController) {
 //        [self toFullScreen:^{
 //        }];

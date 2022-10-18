@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MGPlayerView'
-  s.version          = '0.4.7'
+  s.version          = '0.4.8'
   s.summary          = 'A short description of MGPlayerView.'
 
   s.description      = <<-DESC
